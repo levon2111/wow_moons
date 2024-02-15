@@ -1,113 +1,99 @@
-import Image from "next/image";
+import React from "react";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+      <React.Fragment>
+        <main>
+          <div className="service-label">Marketing Design</div>
+          <div className="service-label">Branding & Printing</div>
+          <div className="service-label">Packaging and Covers</div>
+          <div className="service-label">UI/UX Design</div>
+          <div className="service-label">Visual Design</div>
+          <section>
+            <h1>Find the Right <span>Service</span> Right away</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Viverra pellentesque cursus
+              scelerisque senectus nisl.
+            </p>
+            <div className="search">Search Dropdown</div>
+          </section>
+        </main>
+        <section className="shelf">
+          <p>Lorem ipsum dolor</p>
+          <h2>Popular Services</h2>
+          <div className="shelf-items popular-services">
+            <div className="service-item item-0">
+              <div className="overlay">
+                <span className="description">Build your brand</span>
+                <span className="title">Graphic Design</span>
+                <button className="start-icon">
+                  <img src="/icon-arrow.svg"/>
+                </button>
+                <button className="start">Get Start</button>
+              </div>
+            </div>
+            <div className="service-item item-1">
+            </div>
+            <div className="service-item item-2"></div>
+          </div>
+        </section>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <section className="banner">
+          <div className="banner-content">
+            <p>Lorem ipsum dolor</p>
+            <h2>We Will Help You Grow</h2>
+            <p className="description">
+              Lorem ipsum dolor sit amet consectetur.<br/>
+              Augue eu vel in eros tincidunt neque egestas.<br/>
+              Proin ante urna natoque at vivamus turpis.<br/>
+              Sem in morbi cursus dignissim donec.
+            </p>
+            <button>Learn More</button>
+          </div>
+        </section>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+        <section className="shelf">
+          <p>Lorem ipsum dolor</p>
+          <h2>The best part? Everything.</h2>
+          <div className="shelf-items benefit-items">
+            <div className="benefit-item budget">
+              <img src="/budget.png" alt="budget"/>
+              <h3>Stick to your budget</h3>
+              <p>
+                Find the right service for every price point. No hourly rates, just
+                project-based pricing.
+              </p>
+            </div>
+            <div className="benefit-item quality">
+              <img src="/quality.png" alt="quality"/>
+              <h3>Get quality work done quickly</h3>
+              <p>
+                Hand your project over to a talented freelancer in minutes, get
+                long-lasting results.
+              </p>
+            </div>
+            <div className="benefit-item payment">
+              <img src="/payment.png" alt="payment"/>
+              <h3>Pay when you're happy</h3>
+              <p>
+                Upfront quotes mean no surprises. Payments only get released when
+                you approve.
+              </p>
+            </div>
+            <div className="benefit-item support">
+              <img src="/support.png" alt="support"/>
+              <h3>Count on 24/7 support</h3>
+              <p>
+                Our round-the-clock support team is available to help anytime,
+                anywhere.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="get-in-touch">
+          <h1>Click to</h1>
+          <p>Get in touch</p>
+        </section>
+      </React.Fragment>
+  )
 }
