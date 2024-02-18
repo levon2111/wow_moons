@@ -30,7 +30,7 @@ export default function Footer() {
           >
                 </div>
             </nav>
-            <img className="footer-logo" src="/logo-footer.svg"/>
+            <img className="footer-logo" src="/img/logo-footer.svg"/>
         </footer>
     );
 }
