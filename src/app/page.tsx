@@ -27,7 +27,7 @@ export default function Home() {
                 <span className="description">Build your brand</span>
                 <span className="title">Graphic Design</span>
                 <button className="start-icon">
-                  <img src="/icon-arrow.svg"/>
+                  <img src="/img/icon-arrow.svg"/>
                 </button>
                 <button className="start">Get Start</button>
               </div>
@@ -57,7 +57,7 @@ export default function Home() {
           <h2>The best part? Everything.</h2>
           <div className="shelf-items benefit-items">
             <div className="benefit-item budget">
-              <img src="/budget.png" alt="budget"/>
+              <img src="/img/budget.png" alt="budget"/>
               <h3>Stick to your budget</h3>
               <p>
                 Find the right service for every price point. No hourly rates, just
@@ -65,7 +65,7 @@ export default function Home() {
               </p>
             </div>
             <div className="benefit-item quality">
-              <img src="/quality.png" alt="quality"/>
+              <img src="/img/quality.png" alt="quality"/>
               <h3>Get quality work done quickly</h3>
               <p>
                 Hand your project over to a talented freelancer in minutes, get
@@ -73,7 +73,7 @@ export default function Home() {
               </p>
             </div>
             <div className="benefit-item payment">
-              <img src="/payment.png" alt="payment"/>
+              <img src="/img/payment.png" alt="payment"/>
               <h3>Pay when you're happy</h3>
               <p>
                 Upfront quotes mean no surprises. Payments only get released when
@@ -81,7 +81,7 @@ export default function Home() {
               </p>
             </div>
             <div className="benefit-item support">
-              <img src="/support.png" alt="support"/>
+              <img src="/img/support.png" alt="support"/>
               <h3>Count on 24/7 support</h3>
               <p>
                 Our round-the-clock support team is available to help anytime,

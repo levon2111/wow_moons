@@ -41,7 +41,7 @@ export default function Services() {
                             <h5>Invitation Design</h5>
                         </div>
                         <button>
-                            <img src="/icon-arrow.svg"/>
+                            <img src="/img/icon-arrow.svg"/>
                         </button>
                     </div>
                     <div className="service-item">
@@ -50,7 +50,7 @@ export default function Services() {
                             <h5>Invitation Design</h5>
                         </div>
                         <button>
-                            <img src="/icon-arrow.svg"/>
+                            <img src="/img/icon-arrow.svg"/>
                         </button>
                     </div>
                     <div className="service-item">
@@ -59,7 +59,7 @@ export default function Services() {
                             <h5>Invitation Design</h5>
                         </div>
                         <button>
-                            <img src="/icon-arrow.svg"/>
+                            <img src="/img/icon-arrow.svg"/>
                         </button>
                     </div>
                     <div className="service-item">
@@ -68,7 +68,7 @@ export default function Services() {
                             <h5>Invitation Design</h5>
                         </div>
                         <button>
-                            <img src="/icon-arrow.svg"/>
+                            <img src="/img/icon-arrow.svg"/>
                         </button>
                     </div>
                 </div>
