@@ -1,8 +1,6 @@
 import type {Metadata} from "next";
 import {Inter} from "next/font/google";
 import "../styles/globals.css";
-import Header from "@/app/includes/header";
-import Footer from "@/app/includes/footer";
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -23,9 +21,7 @@ export default function RootLayout({children,}: Readonly<{
             <title>Wow Moon Homepage</title>
         </head>
         <body>
-        <Header/>
         {children}
-        <Footer/>
         </body>
         </html>
     );

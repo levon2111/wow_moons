@@ -1,33 +1,34 @@
+import Link from "next/link";
+
 export default function Footer() {
     return (
         <footer>
             <nav>
                 <div className="column">
-                    <a href="">Services</a>
-                    <a href="">Branding & Printing</a>
-                    <a href="">UI/UX Design</a>
+                    <Link href={"/services"}>Services</Link>
+                    <Link href={"/services/branding-and-printing"}>Branding & Printing</Link>
+                    <Link href={"/services/ui-ux-design"}>UI/UX Design</Link>
                 </div>
                 <div className="column">
-                    <a href="">Visual Design</a>
-                    <a href="">Marketing Design</a>
-                    <a href="">Packaging & Covers</a>
+                    <Link href={"/services/visual-design"}>Visual Design</Link>
+                    <Link href={"/services/marketing-design"}>Marketing Design</Link>
+                    <Link href={"/services/packaging-and-covers"}>Packaging & Covers</Link>
                 </div>
                 <div className="column">
-                    <a href="">About Us</a>
-                    <a href="">Learn</a>
-                    <a href="">Blog</a>
-                    <a href="">Get in Touch</a>
+                    <Link href={"/about-us"}>About Us</Link>
+                    <Link href={"/learn"}>Learn</Link>
+                    <Link href={"/blog"}>Blog</Link>
+                    <Link href={"/contact-us"}>Get in Touch</Link>
                 </div>
                 <div className="column">
-                    <a href="">FAQ</a>
-                    <a href="">Privacy Policy</a>
-                    <a href="">Terms and Conditions</a>
+                    <Link href={"/faq"}>FAQ</Link>
+                    <Link href={"/privacy-policy"}>Privacy Policy</Link>
+                    <Link href={"/terms-and-conditions"}>Terms and Conditions</Link>
                 </div>
                 <div className="column">
-          <span className="terms"
-          >© <span id="year"></span> Sentium AI. All<br/>
-            rights reserved</span
-          >
+                  <span className="terms">© <span id="year"></span>Wow Moon All<br/>
+                    rights reserved
+                  </span>
                 </div>
             </nav>
             <img className="footer-logo" src="/img/logo-footer.svg"/>

@@ -1,3 +1,7 @@
+import Header from "@/app/includes/header";
+import React from "react";
+import Footer from "@/app/includes/footer";
+
 export default function SingleService({params}: {
     params: {
         slug: string[];
@@ -5,6 +9,7 @@ export default function SingleService({params}: {
 }) {
     return (
         <>
+            <Header/>
             <section className="banner">
                 <h1>Graphic Design</h1>
                 <p>
@@ -114,6 +119,7 @@ export default function SingleService({params}: {
                     creatives.
                 </p>
             </section>
+            <Footer/>
         </>
     )
 }
