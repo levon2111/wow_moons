@@ -2,7 +2,7 @@ import React from "react";
 import Header from "@/app/includes/header";
 import Footer from "@/app/includes/footer";
 import Link from "next/link";
-
+import 'tailwindcss/tailwind.css';
 export default function Home() {
     return (
         <>
