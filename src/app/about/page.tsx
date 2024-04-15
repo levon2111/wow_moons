@@ -1,7 +1,7 @@
 import * as React from "react";
 import Footer from "@/app/includes/footer";
 import Header from "@/app/includes/header";
-import 'tailwindcss/tailwind.css';
+// import 'tailwindcss/tailwind.css';
 
 interface LogoProps {
     src: string;

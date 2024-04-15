@@ -10,7 +10,7 @@ import {media} from "@/pages/utils/media";
 import Container from "@/pages/_components/Container";
 import AutofitGrid from "@/pages/_components/AutofitGrid";
 import {getAllPosts} from "@/pages/utils/postsFetcher";
-import "../../styles/globals.css";
+// import "../../styles/globals.css";
 
 import MetadataHead from "@/pages/views/SingleArticlePage/MetadataHead";
 import dynamic from "next/dynamic";

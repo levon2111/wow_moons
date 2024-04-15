@@ -1,34 +1,24 @@
-
-main {
-    padding: 60px;
-}
-
 .services-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 24px;
 }
-
 .services-header h2 {
     font-size: 100px;
 }
-
 .filters fieldset {
     border: none;
     display: flex;
     gap: 12px;
 }
-
 .form-control input {
     display: none;
 }
-
 .form-control input:checked + label {
     background-color: #e2e8ff;
     color: #2b43d5;
 }
-
 .form-control label {
     font-size: 20px;
     color: #b6b9c2;
@@ -36,13 +26,11 @@ main {
     border-radius: 25px;
     cursor: pointer;
 }
-
 .services-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
 }
-
 .service-item {
     border-radius: 12px;
     flex-basis: 32%;
@@ -56,12 +44,10 @@ main {
     padding: 24px;
     color: white;
 }
-
 .service-item span {
     color: #aeaeae;
     font-size: 18px;
 }
-
 .service-item h5 {
     margin-top: 8px;
     font-size: 24px;

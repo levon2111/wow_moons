@@ -2,65 +2,105 @@ import React from "react";
 import Header from "@/app/includes/header";
 import Footer from "@/app/includes/footer";
 import Link from "next/link";
-import 'tailwindcss/tailwind.css';
+import "./home.scss";
 export default function Home() {
     return (
         <>
             <Header/>
             <React.Fragment>
-                <main>
-
-                    <div className="service-label">
-                        <Link href={"/services/marketing-design"}>
-                            Marketing Design
-                        </Link>
+                <main className="home-main">
+                    <div className="main-container">
+                        <div className="home-main-content">
+                            <div className="service-label">
+                                <Link href={"/services/marketing-design"}>
+                                    Marketing Design
+                                </Link>
+                            </div>
+                            <div className="service-label">
+                                <Link href={"/services/branding-and-printing"}>
+                                    Branding & Printing
+                                </Link>
+                            </div>
+                            <div className="service-label">
+                                <Link href={"/services/packaging-and-covers"}>
+                                    Packaging and Covers
+                                </Link>
+                            </div>
+                            <div className="service-label">
+                                <Link href={"/services/ui-ux-design"}>
+                                    UI/UX Design
+                                </Link>
+                            </div>
+                            <div className="service-label">
+                                <Link href={"/services/visual-design"}>
+                                    Visual Design
+                                </Link>
+                            </div>
+                            <section className="home-main-section">
+                                <h1>Find the Right
+                                    <span>Service</span>
+                                    Right away
+                                </h1>
+                                <p className="home-main-section-info">
+                                    Lorem ipsum dolor sit amet consectetur.
+                                    Viverra pellentesque cursus
+                                    scelerisque senectus nisl.
+                                </p>
+                                <div className="home-search-container">
+                                    <div className="home-search-wrapper">
+                                        <i className="icon-search" />
+                                        <input className="home-search" type="text" placeholder="Search" />
+                                    </div>
+                                    {/*ToDo add active class for open search bottom dropdown*/}
+                                    <div className="search-items-wrapper">
+                                        <div className="search-items-container">
+                                            <div className="search-items-content">
+                                                <div className="search-items-row">
+                                                    <span className="search-items-row-txt">Printing</span>
+                                                </div>
+                                                <div className="search-items-row">
+                                                    <span className="search-items-row-txt">UI/UX Design</span>
+                                                </div>
+                                                <div className="search-items-row">
+                                                    <span className="search-items-row-txt">Packaging</span>
+                                                </div>
+                                                <div className="search-items-row">
+                                                    <span className="search-items-row-txt">Marketing Design</span>
+                                                </div>
+                                                <div className="search-items-row">
+                                                    <span className="search-items-row-txt">Visual Design</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
                     </div>
-                    <div className="service-label">
-                        <Link href={"/services/branding-and-printing"}>
-                            Branding & Printing
-                        </Link>
-                    </div>
-                    <div className="service-label">
-                        <Link href={"/services/packaging-and-covers"}>
-                            Packaging and Covers
-                        </Link>
-                    </div>
-                    <div className="service-label">
-                        <Link href={"/services/ui-ux-design"}>
-                            UI/UX Design
-                        </Link>
-                    </div>
-                    <div className="service-label">
-                        <Link href={"/services/visual-design"}>
-                            Visual Design
-                        </Link>
-                    </div>
-                    <section>
-                        <h1>Find the Right <span>Service</span> Right away</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur. Viverra pellentesque cursus
-                            scelerisque senectus nisl.
-                        </p>
-                        <div className="search">Search Dropdown</div>
-                    </section>
                 </main>
-                <section className="shelf">
-                    <p>Lorem ipsum dolor</p>
-                    <h2>Popular Services</h2>
-                    <div className="shelf-items popular-services">
-                        <div className="service-item item-0">
-                            <div className="overlay">
-                                <span className="description">Build your brand</span>
-                                <span className="title">Graphic Design</span>
-                                <button className="start-icon">
-                                    <img src="/img/icon-arrow.svg"/>
-                                </button>
-                                <button className="start">Get Start</button>
+                <section className="services-section-container">
+                    <div className="main-container">
+                        <div className="services-section">
+                            <h6 className="section-subtitle">Lorem ipsum dolor</h6>
+                            <h2 className="section-title">Popular Services</h2>
+
+                            <div className="services-items-wrapper"></div>
+                            <div className="shelf-items popular-services">
+                                <div className="service-item item-0">
+                                    <div className="overlay">
+                                        <span className="description">Build your brand</span>
+                                        <span className="title">Graphic Design</span>
+                                        <button className="start-icon">
+                                            <img src="/img/icon-arrow.svg"/>
+                                        </button>
+                                        <button className="start">Get Start</button>
+                                    </div>
+                                </div>
+                                <div className="service-item item-1">
+                                </div>
+                                <div className="service-item item-2"></div>
                             </div>
                         </div>
-                        <div className="service-item item-1">
-                        </div>
-                        <div className="service-item item-2"></div>
                     </div>
                 </section>
 
@@ -123,6 +163,5 @@ export default function Home() {
             </React.Fragment>
             <Footer/>
         </>
-
     )
 }

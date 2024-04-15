@@ -1,5 +1,5 @@
 import * as React from "react";
-import 'tailwindcss/tailwind.css';
+// import 'tailwindcss/tailwind.css';
 import Link from "next/link";
 
 interface StepItemProps {

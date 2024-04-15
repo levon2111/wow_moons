@@ -1,0 +1,67 @@
+@import url("services.css");
+@import url("single-service.css");
+@import "reset.scss";
+@import "structure.scss";
+@import "../../public/font/stylesheet.css";
+@import "../../public/icons/style.css";
+
+.main-container{
+  width: 100%;
+  max-width: 130rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+  @media screen and (max-width: 761px) {
+    padding: 0 1.6rem;
+  }
+}
+h1{
+  font-size: 6.4rem;
+  line-height: 6.8rem;
+}
+h2{
+  font-weight: 600;
+  font-size: 4.8rem;
+  line-height: 5.2rem;
+  color: #1c1c20;
+}
+h6{
+  &.section-subtitle{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.02em;
+    color: #2F40D5;
+  }
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to right, #2b43d5, #5626d5);
+  padding: 60px;
+  padding-top: 170px;
+  margin-top: -60px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+footer nav {
+  display: flex;
+  justify-content: space-between;
+}
+footer nav .column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+footer nav .column a {
+  font-size: 1rem;
+  color: #d3d6de;
+  text-decoration: none;
+}
+footer nav .column .terms {
+  color: #b6b9c2;
+}
+footer .footer-logo {
+  width: 100%;
+}
+

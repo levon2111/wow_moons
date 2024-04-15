@@ -20,7 +20,7 @@ import client from "../../../tina/__generated__/client";
 import {getAllPosts} from "@/pages/utils/postsFetcher";
 import Container from "@/pages/_components/Container";
 import dynamic from "next/dynamic";
-import "../../styles/globals.css";
+// import "../../styles/globals.css";
 
 const TopMenu = dynamic(
     () => import('@/app/includes/header'),
