@@ -19,19 +19,37 @@ h1{
   line-height: 6.8rem;
 }
 h2{
+  font-size: 5.6rem;
+  line-height: 5.8rem;
   font-weight: 600;
+}
+h3{
   font-size: 4.8rem;
   line-height: 5.2rem;
-  color: #1c1c20;
+  font-weight: 600;
+  &:not(.light){
+    color: #1c1c20;
+  }
+  &.light{
+    color: #ffffff;
+  }
 }
-h6{
+h4{
+  font-size: 3.2rem;
+  line-height: 3.4rem;
+}
+h5{
+  font-size: 1.8rem;
+  line-height: 2.6rem;
   &.section-subtitle{
     font-weight: 600;
-    font-size: 1.8rem;
-    line-height: 2.6rem;
     letter-spacing: 0.02em;
     color: #2F40D5;
   }
+}
+h6{
+  font-size: 1.6rem;
+  line-height: 1.8rem;
 }
 
 /* Footer */
