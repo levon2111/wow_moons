@@ -150,48 +150,43 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        <section className="shelf">
-          <p>Lorem ipsum dolor</p>
-          <h3>The best part? Everything.</h3>
-          <div className="shelf-items benefit-items">
-            <div className="benefit-item budget">
-              <img src="/img/budget.png" alt="budget"/>
-              <h3>Stick to your budget</h3>
-              <p>
-                Find the right service for every price point. No hourly rates, just
-                project-based pricing.
-              </p>
-            </div>
-            <div className="benefit-item quality">
-              <img src="/img/quality.png" alt="quality"/>
-              <h3>Get quality work done quickly</h3>
-              <p>
-                Hand your project over to a talented freelancer in minutes, get
-                long-lasting results.
-              </p>
-            </div>
-            <div className="benefit-item payment">
-              <img src="/img/payment.png" alt="payment"/>
-              <h3>Pay when you're happy</h3>
-              <p>
-                Upfront quotes mean no surprises. Payments only get released when
-                you approve.
-              </p>
-            </div>
-            <div className="benefit-item support">
-              <img src="/img/support.png" alt="support"/>
-              <h3>Count on 24/7 support</h3>
-              <p>
-                Our round-the-clock support team is available to help anytime,
-                anywhere.
-              </p>
+        <section className="benefit-section">
+          <div className="main-container">
+            <div className="benefit-section-container">
+              <h5 className="section-subtitle">Lorem ipsum dolor</h5>
+              <h3 className="section-title">The best part? Everything.</h3>
+              <div className="benefit-section-items-container">
+                <div className="benefit-section-item">
+                  <div className="benefit-item-inner-img" />
+                  <p className="benefit-item-title">Stick to your budget</p>
+                  <h5 className="benefit-item-info">Find the right service for every price point. No hourly rates, just project-based pricing.</h5>
+                </div>
+                <div className="benefit-section-item">
+                  <div className="benefit-item-inner-img" />
+                  <p className="benefit-item-title">Get quality work done quickly</p>
+                  <h5 className="benefit-item-info">Hand your project over to a talented freelancer in minutes, get long-lasting results.</h5>
+                </div>
+                <div className="benefit-section-item">
+                  <div className="benefit-item-inner-img" />
+                  <p className="benefit-item-title">Pay when you're happy</p>
+                  <h5 className="benefit-item-info">Upfront quotes mean no surprises. Payments only get released when you approve.</h5>
+                  <div className="benefit-item-top-shine">
+                    <span className="benefit-item-top-shine-txt">Such Company Values!</span>
+                  </div>
+                </div>
+                <div className="benefit-section-item">
+                  <div className="benefit-item-inner-img" />
+                  <p className="benefit-item-title">Count on 24/7 support</p>
+                  <h5 className="benefit-item-info">Our round-the-clock support team is available to help anytime, anywhere.</h5>
+                </div>
+              </div>
             </div>
           </div>
         </section>
-        <section className="get-in-touch">
-          <h1>Click to</h1>
-          <p>Get in touch</p>
+
+        <section className="get-in-touch-section">
+          <p className="click-txt">Click to</p>
+          <h3 className="light">Get in touch</h3>
         </section>
       </React.Fragment>
       <Footer/>

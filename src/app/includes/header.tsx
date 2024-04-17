@@ -10,7 +10,7 @@ export default function Header() {
               <Link className="header-logo-container" href={"/home"}>
                 <img src="/img/logo-header.svg"/>
               </Link>
-              <nav>
+              <nav className="header-nav">
                 <Link className="header-link" href={"/about"}>About Us</Link>
                 <Link className="header-link" href={"/services"}>Services</Link>
                 <Link className="header-link" href={"/learn"}>Learn</Link>

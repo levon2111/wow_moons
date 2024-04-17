@@ -179,6 +179,20 @@
 .services-section-container{
   width: 100%;
   margin-bottom: 8rem;
+  .section-title{
+    &:after{
+      content: "";
+      position: absolute;
+      left: 84%;
+      top: -7.2rem;
+      width: 13.4rem;
+      height: 10rem;
+      background-image: url("../../../public/img/services-section-top.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: contain;
+    }
+  }
 }
 .services-section{
   width: 100%;
@@ -187,20 +201,9 @@
   position: relative;
   display: inline-block;
   margin-bottom: 4rem;
-  &:after{
-    content: "";
-    position: absolute;
-    left: 84%;
-    top: -7.2rem;
-    width: 13.4rem;
-    height: 10rem;
-    background-image: url("../../../public/img/services-section-top.png");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: contain;
-  }
 }
 .services-items-wrapper{
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
   gap: 2.4rem;
@@ -468,55 +471,111 @@
   }
 }
 
-.benefit-items {
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+.benefit-section{
+  width: 100%;
+  margin-bottom: 8rem;
 }
-.benefit-items .benefit-item {
-  border-radius: 12px;
-  padding: 60px 40px;
+.benefit-section-container{
+  width: 100%;
 }
-.benefit-items .benefit-item.budget {
-  background-color: #f3fff5;
+.benefit-section-items-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+  gap: 2.4rem;
 }
-.benefit-items .benefit-item.quality {
-  background-color: #fffcf3;
+.benefit-section-item{
+  min-height: 34rem;
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 4rem;
+  border-radius: 1.2rem;
+  position: relative;
+  &:first-child{
+    background-color: #F3FFF5;
+    .benefit-item-inner-img{
+      background-image: url("../../../public/img/budget.png");
+    }
+  }
+  &:nth-child(2){
+    background-color: #FFFCF3;
+    .benefit-item-inner-img{
+      background-image: url("../../../public/img/quality.png");
+    }
+  }
+  &:nth-child(3){
+    z-index: 10;
+    background-color: #F8F3FF;
+    .benefit-item-inner-img{
+      background-image: url("../../../public/img/payment.png");
+    }
+  }
+  &:nth-child(4){
+    background-color: #E2E8FF;
+    .benefit-item-inner-img{
+      background-image: url("../../../public/img/support.png");
+    }
+  }
 }
-.benefit-items .benefit-item.payment {
-  background-color: #f8f3ff;
+.benefit-item-inner-img{
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1.2rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
 }
-.benefit-items .benefit-item.support {
-  background-color: #e2e8ff;
-}
-.benefit-items .benefit-item h3 {
-  margin-bottom: 12px;
-  font-size: 24px;
+.benefit-item-title{
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  font-weight: 600;
   color: #1c1c20;
+  margin-bottom: 1.6rem;
 }
-.benefit-items .benefit-item p {
-  font-size: 18px;
+.benefit-item-info{
+  font-weight: 400;
   color: #83848a;
 }
+.benefit-item-top-shine{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -2rem;
+  top: -5.3rem;
+  width: 16.4rem;
+  height: 10.6rem;
+  background-image: url("../../../public/img/benefit-shine-img.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  padding: 4rem 3rem 4rem 4.4rem;
+}
+.benefit-item-top-shine-txt{
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  color: #1c1c20;
+}
 
-section.get-in-touch {
+.get-in-touch-section {
   position: relative;
   z-index: 10;
-  height: 100vh;
-  background: black;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+  height: 80rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom-left-radius: 6rem;
+  border-bottom-right-radius: 6rem;
+  background-color: #000000;
 }
-section.get-in-touch h1 {
-  font-size: 250px;
-  color: white;
-  margin: 0;
-  margin-top: 170px;
+.click-txt{
+  font-size: 25rem;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #ffffff;
   text-transform: uppercase;
-}
-section.get-in-touch p {
-  font-size: 48px;
-  color: white;
+  text-align: center;
+  margin-top: 15rem;
 }
