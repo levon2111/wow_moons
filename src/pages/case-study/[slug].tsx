@@ -5,32 +5,32 @@ import {ToastContainer} from 'react-toastify';
 import styled from 'styled-components';
 import {useTina} from 'tinacms/dist/react';
 import {CaseStudyQuery, Exact} from "../../../tina/__generated__/types";
-import {getReadTime} from "@/pages/utils/readTime";
-import {formatDate} from "@/pages/utils/formatDate";
-import OpenGraphHead from "@/pages/views/SingleArticlePage/OpenGraphHead";
-import StructuredDataHead from "@/pages/views/SingleArticlePage/StructuredDataHead";
-import MetadataHead from "@/pages/views/SingleArticlePage/MetadataHead";
-import Header from "@/pages/views/SingleArticlePage/Header";
-import MDXRichText from '../_components/MDXRichText';
-import BlogGridItem from "@/pages/_components/BlogIGridItem";
-import AutofitGrid from "@/pages/_components/AutofitGrid";
-import {media} from "@/pages/utils/media";
+import {getReadTime} from "@/utils/readTime";
+import {formatDate} from "@/utils/formatDate";
+import OpenGraphHead from "@/views/SingleArticlePage/OpenGraphHead";
+import StructuredDataHead from "@/views/SingleArticlePage/StructuredDataHead";
+import MetadataHead from "@/views/SingleArticlePage/MetadataHead";
+import Header from "@/views/SingleArticlePage/Header";
+import {media} from "@/utils/media";
 import client from "../../../tina/__generated__/client";
-import {getAllCaseStudies} from "@/pages/utils/postsFetcher";
-import Container from "@/pages/_components/Container";
+import {getAllCaseStudies} from "@/utils/postsFetcher";
 import dynamic from "next/dynamic";
 import "../../app/[lang]/global.scss";
+import MDXRichText from '@/_components/MDXRichText';
+import BlogGridItem from "@/_components/BlogIGridItem";
+import AutofitGrid from "@/_components/AutofitGrid";
+import Container from "@/_components/Container";
 
 const TopMenu = dynamic(
-    () => import('@/app/[lang]/components/topMenu'),
+    () => import('@/app/[lang]/includes/header'),
     {ssr: false}
 )
 const GetTouchSection = dynamic(
-    () => import('@/app/[lang]/components/getTouchSection'),
+    () => import('@/app/[lang]/includes/getTouchSection'),
     {ssr: false}
 )
 const Footer = dynamic(
-    () => import('@/app/[lang]/components/footer'),
+    () => import('@/app/[lang]/includes/footer'),
     {ssr: false}
 )
 

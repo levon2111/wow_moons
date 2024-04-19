@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import {getAllServices} from "@/pages/utils/postsFetcher";
+import {getAllServices} from "@/utils/postsFetcher";
 
 export default async function GetServices(req: NextApiRequest, res: NextApiResponse) {
   try {

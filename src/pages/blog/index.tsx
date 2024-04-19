@@ -2,27 +2,30 @@ import {InferGetStaticPropsType} from 'next';
 import NextImage from 'next/image';
 import React, {useContext, useEffect, useState} from 'react';
 import styled from 'styled-components';
-import CustomCursorContext from "@/pages/contexts/CustomCursor/context/CustomCursorContext";
-import UpRightArrowButton from "@/pages/_components/UpRightArrowButton";
-import BlogGridItem from "@/pages/_components/BlogIGridItem";
-import Button from "@/pages/_components/Button";
-import {media} from "@/pages/utils/media";
-import Container from "@/pages/_components/Container";
-import AutofitGrid from "@/pages/_components/AutofitGrid";
-import {getAllPosts} from "@/pages/utils/postsFetcher";
-// import "../../styles/globals.css";
+import CustomCursorContext from "@/contexts/CustomCursor/context/CustomCursorContext";
+import {media} from "@/utils/media";
+import {getAllPosts} from "@/utils/postsFetcher";
+import "../../app/[lang]/global.scss";
 
-import MetadataHead from "@/pages/views/SingleArticlePage/MetadataHead";
+import MetadataHead from "@/views/SingleArticlePage/MetadataHead";
 import dynamic from "next/dynamic";
+import UpRightArrowButton from "@/_components/UpRightArrowButton";
+import BlogGridItem from "@/_components/BlogIGridItem";
+import Button from "@/_components/Button";
+import Container from "@/_components/Container";
+import AutofitGrid from "@/_components/AutofitGrid";
 
 const TopMenu = dynamic(
-    () => import('@/app/includes/header'),
-    {ssr: false}
+    () => import('@/app/[lang]/includes/header'),
+    { ssr: false }
 )
-
+const GetTouchSection = dynamic(
+    () => import('@/app/[lang]/includes/getTouchSection'),
+    { ssr: false }
+)
 const Footer = dynamic(
-    () => import('@/app/includes/footer'),
-    {ssr: false}
+    () => import('@/app/[lang]/includes/footer'),
+    { ssr: false }
 )
 
 export default function BlogIndexPage({posts}: InferGetStaticPropsType<typeof getStaticProps>) {
@@ -79,7 +82,7 @@ export default function BlogIndexPage({posts}: InferGetStaticPropsType<typeof ge
                     </LatestPostImageContainer>
                 </LatestPostContainer>
                 <BlogListContainer>
-                    <Title>WowMoon Blog</Title>
+                    <Title>The Ministro Blog</Title>
                     <SegmentButtonGroup>
                         {categories.map(({label, value}) => (
                             <SegmentItem
@@ -105,6 +108,7 @@ export default function BlogIndexPage({posts}: InferGetStaticPropsType<typeof ge
                     </CustomAutofitGrid>
                 </BlogListContainer>
             </BlogGridContainer>
+            <GetTouchSection/>
             <Footer/>
         </>
     );
@@ -151,7 +155,6 @@ const SegmentItem = styled(Button)`
         border-color: var(--gray_10);
         color: var(--gray_1);
     }
-
     @media screen and (max-width: 768px) {
         font-size: 1.6rem;
         line-height: 1.8rem;
@@ -208,7 +211,6 @@ const LatestPostImageContainer = styled.div`
     height: 48rem;
     overflow: hidden;
     border-radius: 1rem;
-
     > img {
         position: static !important;
         display: block;
@@ -242,19 +244,17 @@ const BlogGridContainer = styled(Container)`
     //gap: 1.6rem;
     z-index: 11;
 
-        // & > ${Description} {
+    // & > ${Description} {
     //     max-width: 50%;
     // }
 
     ${media('<=tablet')} {
         //padding: 0;
         //margin-top: 0;
-
         & > ${SubTitle} {
             font-size: 4.8rem;
             line-height: 5.2rem;
         }
-
         & > ${Description} {
             font-size: 1.6rem;
             line-height: 2.4rem;
@@ -262,33 +262,27 @@ const BlogGridContainer = styled(Container)`
             margin-bottom: 1.6rem;
             //margin: 0 1.6rem 0;
         }
-
         & ${LatestPostImageContainer} {
             width: 100%;
             height: 28rem;
             grid-row: 1 / 2;
         }
-
         & ${LatestPostContent} {
             //padding: 2.4rem;
             //gap: 0.8rem;
-
             & ${Badge} {
                 font-size: 1.4rem;
                 line-height: 2rem;
             }
-
             & ${BlogTitle} {
                 font-size: 2.8rem;
                 line-height: 3.2rem;
             }
-
             & ${BlogMoto} {
                 font-size: 2rem;
                 line-height: 2.4rem;
                 font-weight: 600;
             }
-
             & ${Description} {
                 font-size: 1.6rem;
                 line-height: 2rem;
@@ -316,7 +310,6 @@ const LatestPostContainer = styled.div`
         margin-bottom: 1.2rem;
         //margin: 0;
     }
-
     & ${BlogMoto} {
         font-size: 3rem;
         line-height: 3.2rem;
@@ -324,22 +317,18 @@ const LatestPostContainer = styled.div`
         margin-bottom: 0.6rem;
         //margin: 0;
     }
-
     & ${Description} {
         font-size: 2.4rem;
         font-weight: 400;
         margin: 0;
     }
-
     & a {
         margin-top: 0.8rem;
     }
-
     @media screen and (max-width: 768px) {
         grid-template-columns: 1fr;
         gap: 1.2rem;
     }
-
     ${media('<=tablet')} {
         //grid-template-columns: 1fr;
         //grid-template-rows: repeat(2, 31rem);

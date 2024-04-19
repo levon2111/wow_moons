@@ -37,3 +37,6 @@ next-env.d.ts
 
 # idea
 .idea
+public/sitemap-0.xml
+public/sitemap.xml
+public/robots.txt

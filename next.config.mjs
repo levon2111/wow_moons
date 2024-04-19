@@ -7,6 +7,10 @@ const withBundleAnalyzer = generated({
 
 
 const nextConfig = withBundleAnalyzer({
+    generateBuildId: async () => {
+        // This could be anything, using the latest git hash
+        return `${process.env.GIT_HASH}`
+    },
     reactStrictMode: false,
     pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
     images: {
@@ -34,7 +38,7 @@ const nextConfig = withBundleAnalyzer({
             },
         );
 
-        config.resolve.fallback = {fs: false};
+        config.resolve.fallback = { fs: false };
         return config;
     },
 });
