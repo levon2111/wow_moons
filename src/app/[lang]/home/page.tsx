@@ -3,6 +3,8 @@ import Link from "next/link";
 import "./home.scss";
 import Header from "@/app/[lang]/includes/header";
 import Footer from "@/app/[lang]/includes/footer";
+import GetTouchSection from "@/app/[lang]/includes/getTouchSection";
+import CardItem from "@/_components/CardItem";
 export default function Home() {
   return (
     <>
@@ -84,45 +86,9 @@ export default function Home() {
               <h5 className="section-subtitle">Lorem ipsum dolor</h5>
               <h3 className="section-title">Popular Services</h3>
               <div className="services-items-wrapper">
-                <div className="service-card-container">
-                  <button type="button" className="card-get-btn">
-                    <span className="card-get-btn-txt">Get Start</span>
-                  </button>
-                  <div className="service-card-info-container">
-                    <h6 className="card-info-txt">Build your brand</h6>
-                    <h4 className="card-title-txt">Graphic Design</h4>
-                    <button className="card-link-btn">
-                      <i className="icon-link" />
-                    </button>
-                  </div>
-                  <div className="service-card-img-container item-0" />
-                </div>
-                <div className="service-card-container">
-                  <button type="button" className="card-get-btn">
-                    <span className="card-get-btn-txt">Get Start</span>
-                  </button>
-                  <div className="service-card-info-container">
-                    <h6 className="card-info-txt">Build your brand</h6>
-                    <h4 className="card-title-txt">Graphic Design</h4>
-                    <button className="card-link-btn">
-                      <i className="icon-link" />
-                    </button>
-                  </div>
-                  <div className="service-card-img-container item-1" />
-                </div>
-                <div className="service-card-container">
-                  <button type="button" className="card-get-btn">
-                    <span className="card-get-btn-txt">Get Start</span>
-                  </button>
-                  <div className="service-card-info-container">
-                    <h6 className="card-info-txt">Build your brand</h6>
-                    <h4 className="card-title-txt">Graphic Design</h4>
-                    <button className="card-link-btn">
-                      <i className="icon-link" />
-                    </button>
-                  </div>
-                  <div className="service-card-img-container item-2" />
-                </div>
+                <CardItem />
+                <CardItem />
+                <CardItem />
               </div>
             </div>
           </div>
@@ -185,10 +151,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="get-in-touch-section">
-          <p className="click-txt">Click to</p>
-          <h3 className="light">Get in touch</h3>
-        </section>
+        <GetTouchSection />
       </React.Fragment>
       <Footer/>
     </>

@@ -1,88 +1,74 @@
 import React from "react";
 import Header from "@/app/[lang]/includes/header";
 import Footer from "@/app/[lang]/includes/footer";
+import '../../../styles/services.scss';
+import GetTouchSection from "@/app/[lang]/includes/getTouchSection";
 
 export default function Services() {
-    return (
-        <>
-            <Header/>
-            <React.Fragment>
-                <section className="banner">
-                    <h1>Services We Provide</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur. Viverra pellentesque cursus
-                        scelerisque senectus nisl.
-                    </p>
-                </section>
-                <main className="services">
-                    <div className="services-header">
-                        <h2>All Services</h2>
-                        <nav className="filters">
-                            <fieldset>
-                                <div className="form-control">
-                                    <input id="filter-0" type="radio" name="filter" value="0"/>
-                                    <label htmlFor="filter-0"> All Services </label>
-                                </div>
-                                <div className="form-control">
-                                    <input id="filter-1" type="radio" name="filter" value="1"/>
-                                    <label htmlFor="filter-1"> Printing </label>
-                                </div>
-                                <div className="form-control">
-                                    <input id="filter-2" type="radio" name="filter" value="2"/>
-                                    <label htmlFor="filter-2"> UI/UX </label>
-                                </div>
-                                <div className="form-control">
-                                    <input id="filter-3" type="radio" name="filter" value="3"/>
-                                    <label htmlFor="filter-3"> Packaging </label>
-                                </div>
-                            </fieldset>
-                        </nav>
+  return (
+    <>
+      <Header/>
+      <React.Fragment>
+        <section className="services-banner">
+          <div className="services-banner-content">
+            <div className="services-banner-info-container">
+              <h2>Services We Provide</h2>
+              <h4>
+                Lorem ipsum dolor sit amet consectetur. Viverra pellentesque cursus
+                scelerisque senectus nisl.
+              </h4>
+            </div>
+          </div>
+        </section>
+        <main className="services-main-section">
+          <div className="main-container">
+            <div className="services-content-container">
+              <div className="services-header">
+                <p className="services-main-section-title">All Services</p>
+                <nav className="services-filters">
+                  <button type="button" className="services-type-select-btn">
+                    <span className="services-type-select-btn-txt">All Services</span>
+                  </button>
+                  <button type="button" className="services-type-select-btn">
+                    <span className="services-type-select-btn-txt">Printing</span>
+                  </button>
+                  <button type="button" className="services-type-select-btn">
+                    <span className="services-type-select-btn-txt">UI/UX</span>
+                  </button>
+                  <button type="button" className="services-type-select-btn">
+                    <span className="services-type-select-btn-txt">Packaging</span>
+                  </button>
+                  <button type="button" className="services-type-select-btn">
+                    <span className="services-type-select-btn-txt">Marketing D.</span>
+                  </button>
+                  <button type="button" className="services-type-select-btn">
+                    <span className="services-type-select-btn-txt">Visual D.</span>
+                  </button>
+                </nav>
+              </div>
+              <div className="services-main-section-container">
+                <div className="services-section-card">
+                  <div className="services-card-img"/>
+                  <div className="services-section-card-content">
+                    <div className="services-card-info-container">
+                      <h5>Build your brand</h5>
+                      <span className="services-card-subtitle">Invitation Design</span>
                     </div>
-                    <div className="services-list">
-                        <div className="service-item">
-                            <div>
-                                <span>Build your brand</span>
-                                <h5>Invitation Design</h5>
-                            </div>
-                            <button>
-                                <img src="/img/icon-arrow.svg"/>
-                            </button>
-                        </div>
-                        <div className="service-item">
-                            <div>
-                                <span>Build your brand</span>
-                                <h5>Invitation Design</h5>
-                            </div>
-                            <button>
-                                <img src="/img/icon-arrow.svg"/>
-                            </button>
-                        </div>
-                        <div className="service-item">
-                            <div>
-                                <span>Build your brand</span>
-                                <h5>Invitation Design</h5>
-                            </div>
-                            <button>
-                                <img src="/img/icon-arrow.svg"/>
-                            </button>
-                        </div>
-                        <div className="service-item">
-                            <div>
-                                <span>Build your brand</span>
-                                <h5>Invitation Design</h5>
-                            </div>
-                            <button>
-                                <img src="/img/icon-arrow.svg"/>
-                            </button>
-                        </div>
-                    </div>
-                </main>
-                <section className="get-in-touch">
-                    <h1>Click to</h1>
-                    <p>Get in touch</p>
-                </section>
-            </React.Fragment>
-            <Footer/>
-        </>
-    )
+                    <a className="services-card-btn" href={"/services/servicename"}>
+                      <i className="icon-link"/>
+                    </a>
+                    {/*<button type="button" className="services-card-btn">*/}
+                    {/*    <i className="icon-link" />*/}
+                    {/*</button>*/}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <GetTouchSection/>
+      </React.Fragment>
+      <Footer/>
+    </>
+  )
 }
