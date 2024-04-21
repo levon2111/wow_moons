@@ -223,7 +223,7 @@
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 1.8rem;
-  color: #2b43d5;
+  color: var(--link1);
   margin-top: auto;
   >i{
     width: 2rem;
@@ -235,7 +235,7 @@
     margin-inline-start: 0.4rem;
   }
   &:hover{
-    color: #5165e1;
+    color: var(--link1-H);
   }
 }
 

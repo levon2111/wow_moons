@@ -4,6 +4,11 @@
 @import "../../public/font/stylesheet.css";
 @import "../../public/icons/style.css";
 
+:root{
+  --link1: #2b43d5;
+  --link1-H: #5165e1;
+}
+
 .main-container{
   width: 100%;
   max-width: 130rem;
@@ -50,6 +55,29 @@ h6{
   font-size: 1.6rem;
   line-height: 1.8rem;
 }
+
+//get touch section start
+.get-in-touch-section {
+  position: relative;
+  z-index: 10;
+  height: 80rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 6rem;
+  border-bottom-right-radius: 6rem;
+  background-color: #000000;
+}
+.click-txt{
+  font-size: 25rem;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+//get touch section end
 
 /* Footer */
 footer {

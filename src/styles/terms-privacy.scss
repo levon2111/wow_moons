@@ -1,0 +1,59 @@
+.terms-privacy-banner-section{
+  width: 100%;
+  height: 58.6rem;
+  background: url("../../public/img/terms-privacy-banner.png") no-repeat 50% 50%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8rem;
+}
+.term-privacy-main-container{
+  width: 100%;
+  padding: 0 2rem;
+  margin: 0 auto;
+  &:not(.banner){
+    max-width: 110rem;
+  }
+  &.banner{
+    max-width: 67.6rem;
+    text-align: center;
+    h2{
+      color: #000000;
+      margin-bottom: 1.6rem;
+    }
+    h4{
+      font-weight: 400;
+      color: #4a4a4e;
+    }
+  }
+  @media screen and (max-width: 761px) {
+    padding: 0 1.6rem;
+  }
+}
+
+.term-privacy-wrapper{
+  width: 100%;
+  background-color: #ffffff;
+  margin-bottom: 10rem;
+}
+.term-privacy-main-container{
+
+}
+.term-privacy-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.term-privacy-paragraph-title{
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 1.2rem;
+}
+.term-privacy-info-txt{
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  color: #83848a;
+  margin-bottom: 4.8rem;
+}

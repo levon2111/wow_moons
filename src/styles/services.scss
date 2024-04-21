@@ -91,7 +91,7 @@
   &.active{
     background-color: #e2e8ff;
     >span{
-      color: #2b43d5;
+      color: var(--link1);
     }
   }
   &:hover{
@@ -178,7 +178,7 @@
   justify-content: center;
   cursor: pointer;
   >i{
-    color: #2b43d5;
+    color: var(--link1);
     font-size: 1.8rem;
   }
 }
