@@ -13,7 +13,6 @@
   "dependencies": {
     "@accessible/drawer": "^3.0.2",
     "@apollo/client": "^3.9.7",
-    "@esbuild/win32-x64": "^0.20.2",
     "@formatjs/intl-localematcher": "^0.5.4",
     "@n8tb1t/use-scroll-position": "^2.0.3",
     "@next/bundle-analyzer": "^14.1.2",
