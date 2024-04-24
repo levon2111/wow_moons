@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import CustomCursorContext from "@/contexts/CustomCursor/context/CustomCursorContext";
 import {media} from "@/utils/media";
 import {getAllPosts} from "@/utils/postsFetcher";
-import "../../app/[lang]/global.scss";
 
 import MetadataHead from "@/views/SingleArticlePage/MetadataHead";
 import dynamic from "next/dynamic";

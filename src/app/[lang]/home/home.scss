@@ -332,6 +332,10 @@
   cursor: pointer;
   transition: background-color 200ms, color 180ms;
   background-color: #000000;
+  span{
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
   &:hover{
     background-color: #FFFFFF;
     color: #000000;

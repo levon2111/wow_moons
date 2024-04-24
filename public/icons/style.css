@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ju3i83');
-  src:  url('fonts/icomoon.eot?ju3i83#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ju3i83') format('truetype'),
-    url('fonts/icomoon.woff?ju3i83') format('woff'),
-    url('fonts/icomoon.svg?ju3i83#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?6iqr18');
+  src:  url('fonts/icomoon.eot?6iqr18#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?6iqr18') format('truetype'),
+    url('fonts/icomoon.woff?6iqr18') format('woff'),
+    url('fonts/icomoon.svg?6iqr18#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,36 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-star:before {
+  content: "\e919";
+}
+.icon-danger:before {
+  content: "\e918";
+}
+.icon-facebook:before {
+  content: "\e913";
+}
+.icon-twitter-new:before {
+  content: "\e914";
+}
+.icon-twitter:before {
+  content: "\e915";
+}
+.icon-linkedin-new:before {
+  content: "\e916";
+}
+.icon-linkedin:before {
+  content: "\e917";
+}
+.icon-back:before {
+  content: "\e911";
+}
+.icon-next:before {
+  content: "\e912";
+}
+.icon-lock:before {
+  content: "\e910";
+}
 .icon-learn:before {
   content: "\e90f";
 }

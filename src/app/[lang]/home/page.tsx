@@ -104,7 +104,7 @@ export default function Home() {
                   Proin ante urna natoque at vivamus turpis. Sem in morbi cursus dignissim donec.
                 </span>
                 <button type="button" className="middle-banner-btn">
-                  <h5>Learn More</h5>
+                  <span>Learn More</span>
                 </button>
               </div>
               <div className="middle-banner-person-info">

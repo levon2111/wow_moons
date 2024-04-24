@@ -27,7 +27,6 @@ const Footer = dynamic(
     () => import('@/app/[lang]/includes/footer'),
     { ssr: false }
 )
-import "../../app/[lang]/global.scss";
 import MDXRichText from '@/_components/MDXRichText';
 import BlogGridItem from "@/_components/BlogIGridItem";
 import {media} from "@/utils/media";

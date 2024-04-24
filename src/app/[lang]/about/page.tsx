@@ -30,8 +30,7 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({children}) => (
-  <div
-    className="justify-center self-stretch px-6 py-2.5 text-lg font-semibold tracking-wide leading-6 text-center text-white bg-[linear-gradient(97deg,#2B43D5_-4.78%,#5626D5_101.8%)] rounded-[100px] max-md:px-5">
+  <div>
     {children}
   </div>
 );

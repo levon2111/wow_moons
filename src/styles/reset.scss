@@ -139,7 +139,9 @@ template {
 [hidden] {
   display: none;
 }
-
+section{
+  box-sizing: border-box;
+}
 select::-ms-expand {
   display: none;
 }

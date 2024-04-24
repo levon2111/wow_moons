@@ -15,7 +15,6 @@ import {media} from "@/utils/media";
 import client from "../../../tina/__generated__/client";
 import {getAllCaseStudies} from "@/utils/postsFetcher";
 import dynamic from "next/dynamic";
-import "../../app/[lang]/global.scss";
 import MDXRichText from '@/_components/MDXRichText';
 import BlogGridItem from "@/_components/BlogIGridItem";
 import AutofitGrid from "@/_components/AutofitGrid";

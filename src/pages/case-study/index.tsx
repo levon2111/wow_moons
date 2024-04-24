@@ -7,7 +7,6 @@ import {media} from "@/utils/media";
 import {getAllCaseStudies} from "@/utils/postsFetcher";
 
 import dynamic from "next/dynamic";
-import "../../app/[lang]/global.scss";
 import UpRightArrowButton from "@/_components/UpRightArrowButton";
 import BlogGridItem from "@/_components/BlogIGridItem";
 import Button from "@/_components/Button";

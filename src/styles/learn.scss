@@ -20,6 +20,7 @@ header{
   align-items: center;
   justify-content: center;
   max-width: 67.6rem;
+  padding: 0 2rem;
   text-align: center;
   h2{
     color: #ffffff;
@@ -40,3 +41,301 @@ header{
     margin-bottom: 1.6rem;
   }
 }
+
+//start members section
+.learn-members-section{
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 8rem;
+  padding-top: 8rem;
+}
+.learn-members-content-container{
+  width: 100%;
+  h3{
+    margin-bottom: 4rem;
+  }
+}
+.our-team-cards-container{
+  display: grid;
+  grid-column-gap: 2.4rem;
+  grid-row-gap: 4rem;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  @media screen and (max-width: 761px) {
+    grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+    grid-column-gap: 1.8rem;
+    grid-row-gap: 2.2rem;
+  }
+}
+.our-team-card-item{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.team-player-img-item{
+  width: 100%;
+  height: 43.8rem;
+  border-radius: 1.2rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2.4rem;
+  background-image: url("../../public/img/team-member.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #e6e6e6;
+  @media screen and (max-width: 761px) {
+    height: 22rem;
+    margin-bottom: 1.8rem;
+  }
+}
+.team-player-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.team-player-name-txt-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+.team-player-name-txt{
+  font-size: 3.2rem;
+  line-height: 3.4rem;
+  font-weight: 600;
+  color: #1c1c20;
+  @media screen and (max-width: 761px) {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+}
+.profile-social-media-link{
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  >i{
+    font-size: 3.6rem;
+    color: #4a4a4e;
+    transition: color 120ms;
+  }
+  &:hover{
+    >i{
+      color: #0072b1;
+    }
+  }
+  @media screen and (max-width: 761px) {
+    width: 3rem;
+    height: 3rem;
+    >i{
+      font-size: 2.8rem;
+    }
+  }
+}
+.team-player-info-txt{
+  font-size: 2rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+  color: #83848a;
+  @media screen and (max-width: 761px) {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+}
+//end members section
+
+//process section
+.process-section{
+  width: 100%;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.process-section-content{
+  width: 100%;
+  >h3{
+    max-width: 68rem;
+    margin-bottom: 1.6rem;
+  }
+}
+.process-subtitle{
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #2b2b2e;
+  max-width: 68rem;
+  margin-bottom: 4rem;
+}
+.process-items-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.process-item{
+  width: 100%;
+  height: 7.2rem;
+  border-radius: 4rem;
+  padding: 0 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  &:not(:last-child){
+    margin-bottom: 2.8rem;
+  }
+  &:nth-child(1){
+    max-width: 56rem;
+    background-color: #ffdf1f;
+  }
+  &:nth-child(2){
+    max-width: 48rem;
+    background: #fd7e2d;
+    margin-inline-start: 8%;
+  }
+  &:nth-child(3){
+    max-width: 57rem;
+    background-color: #566eff;
+    margin-inline-start: 12%;
+  }
+  &:nth-child(4){
+    max-width: 53rem;
+    background-color: #1bd3fc;
+    margin-inline: auto;
+  }
+  &:nth-child(5){
+    max-width: 50rem;
+    background-color: #a3bfff;
+    margin-inline-start: auto;
+    margin-inline-end: 12%;
+  }
+  &:nth-child(6){
+    max-width: 45.8rem;
+    background-color: #7a9eff;
+    margin-inline-start: auto;
+    margin-inline-end: 8%;
+  }
+  &:nth-child(7){
+    max-width: 40rem;
+    background-image: linear-gradient(125deg, #2b43d5 0%, #5626d5 100%);
+    margin-inline-start: auto;
+  }
+}
+.process-item-number{
+  width: 5.2rem;
+  height: 5.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 0.6rem solid rgba(255, 255, 255, 0.2);
+}
+.process-item-number-txt{
+  display: block;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+.process-items-name-txt{
+  display: block;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.process-item-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  margin-inline-start: auto;
+  >i{
+    font-size: 2.4rem;
+    color: #ffffff;
+  }
+}
+//process section
+
+//reviews section
+.reviews-section{
+  width: 100%;
+  background-color: #000000;
+  padding: 6rem 0;
+  position: relative;
+  z-index: 10;
+}
+.reviews-section-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+}
+.reviews-section-title{
+  display: flex;
+  align-items: center;
+  font-size: 4rem;
+  line-height: 4.4rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.reviews-item-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 26rem;
+  border-radius: 1.6rem;
+  padding: 2.4rem;
+  background-color: #202020;
+}
+.reviews-item-top-row{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.6rem;
+  margin-bottom: 2.4rem;
+  .names-txt{
+    color: #ffffff;
+  }
+}
+.reviews-img{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background: url("../../public/img/team-member.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+.reviews-stars-row{
+  width: 100%;
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 1.6rem;
+  >i{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    cursor: pointer;
+    &.active{
+      color: #FFD35F;
+    }
+  }
+}
+.reviews-main-info{
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: #c8c8c8;
+}
+//reviews section
