@@ -286,7 +286,7 @@ export default function Learn() {
                 <i className="icon-star" />
                 <i className="icon-star" />
               </div>
-              <p className="reviews-main-info">The design and the delivery of the content is wonderful. It inspires confidence that you've applied your methods to you own programme - with great, user-friendly results.</p>
+              <p className="reviews-main-info">The design and the delivery of the content is wonderful. It inspires confidence that you have applied your methods to you own programme - with great, user-friendly results.</p>
             </div>
             <div className="reviews-item-container">
               <div className="reviews-item-top-row">
@@ -301,7 +301,7 @@ export default function Learn() {
                 <i className="icon-star" />
                 <i className="icon-star" />
               </div>
-              <p className="reviews-main-info">The design and the delivery of the content is wonderful. It inspires confidence that you've applied your methods to you own programme - with great, user-friendly results.</p>
+              <p className="reviews-main-info">The design and the delivery of the content is wonderful. It inspires confidence that you have applied your methods to you own programme - with great, user-friendly results.</p>
             </div>
           </div>
         </div>

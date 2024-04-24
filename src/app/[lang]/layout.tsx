@@ -24,20 +24,14 @@ export default async function RootLayout({
                                          }: Readonly<{
     children: React.ReactNode;
     params: {
-        lang: Locale
-    }
+        lang: Locale,
+    };
 }>) {
     const dictionary = await getDictionary(params.lang || "en")
 
     return (
         <html lang={params.lang}>
-        <head>
-            <meta charSet="UTF-8"/>
-            <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-            <title>Wow Moon Homepage</title>
-        </head>
-        <body>
+        <body className={inter.className}>
         <DictionaryProvider dictionary={dictionary}>
             {children}
         </DictionaryProvider>
@@ -45,3 +39,4 @@ export default async function RootLayout({
         </html>
     );
 }
+
