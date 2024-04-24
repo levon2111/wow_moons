@@ -42,6 +42,10 @@ h4{
   font-size: 3.2rem;
   line-height: 3.4rem;
 }
+.middle-txt{
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+}
 h5{
   font-size: 1.8rem;
   line-height: 2.6rem;
@@ -54,10 +58,6 @@ h5{
 h6{
   font-size: 1.6rem;
   line-height: 1.8rem;
-}
-.middle-txt{
-  font-size: 2.4rem;
-  line-height: 2.6rem;
 }
 
 //get touch section start
@@ -259,6 +259,203 @@ footer {
 }
 //service card end
 
-//services single start
+//steps section
+.steps-main-wrapper{
+  width: 100%;
+  &.dark{
+    .steps-left-column{
+      background-color: #1c1c1c;
+    }
+    .steps-top-row{
+      background-color: #000000;
+    }
+    .steps-main-content{
+      background-color: #212223;
+    }
+  }
+}
+.steps-top-row{
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  border-radius: 1.2rem 1.2rem 0 0;
+  >h6{
+    font-weight: 400;
+  }
+}
+.steps-top-row-close-btn{
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  &:hover{
+    >i{
+      color: #ffffff;
+    }
+  }
+  >i{
+    font-size: 1.8rem;
+    color: #B1B1B1;
+    transition: color 200ms;
+  }
+}
+.steps-main-content{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2.4rem;
+  padding: 2.4rem 2.4rem 0;
+}
+.steps-left-column{
+  width: 29.2rem;
+  min-height: 60rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  gap: 1.8rem;
+}
+.steps-left-column-title{
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  color: #dcdcdc;
+}
+.steps-main-column{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding-bottom: 2.4rem;
+  >h4, h6{
+    max-width: 44.4rem;
+  }
+  >h4{
+    font-weight: 700;
+  }
+  >h6{
+    font-weight: 400;
+    color: #83848a;
+  }
+  .learn-link-bottom-buttons-row{
+    justify-content: flex-end;
+  }
+}
+.steps-main-items-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+  gap: 1.6rem;
+}
+.steps-main-item-card{
+  min-height: 23rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3.2rem;
+  border-radius: 1.2rem;
+  position: relative;
+  &:nth-child(1){
+    .step-item-img{
+      background-image: url("../../public/img/step-dark-item-img-1.png");
+    }
+  }
+  &:nth-child(2){
+    .step-item-img{
+      background-image: url("../../public/img/step-dark-item-img-2.png");
+    }
+  }
+}
+.step-item-img-container{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  z-index: 4;
+  >i{
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: #ffffff;
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+.step-item-img{
+  flex: 0 0 auto;
+  width: 6.8rem;
+  height: 6.8rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
+  z-index: 10;
+}
 
-//services single end
+.step-radio-hidden{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+  &:checked{
+    ~ .step-item-bg{
+      border: 0.1rem solid #868686;
+    }
+    ~ .step-item-img-container{
+      .icon-done-outline{
+        opacity: 1;
+      }
+    }
+  }
+  &:not(:checked){
+    &:hover{
+      ~ .step-item-bg {
+        box-shadow: 0 0 1rem #3d3c3c;
+      }
+    }
+  }
+}
+.step-item-bg{
+  position: absolute;
+  inset: 0;
+  border-radius: 1.2rem;
+  background-color: #131316;
+  transition: background-color 140ms, box-shadow 160ms;
+  border: 0.1rem solid transparent;
+  z-index: 1;
+}
+.step-item-info-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+  h6{
+    font-weight: 400;
+    color: #585858;
+  }
+}
+.step-item-info-title{
+  font-size: 2rem;
+  line-height: 2.2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+//steps section

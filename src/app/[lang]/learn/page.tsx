@@ -1,8 +1,7 @@
 import Header from "@/app/[lang]/includes/header";
-import "../../../styles/learn.scss";
 import Footer from "@/app/[lang]/includes/footer";
 import Link from "next/link";
-import LearnStep2 from "@/app/[lang]/learn-step-two/page";
+import "../../../styles/learn.scss";
 
 export default function Learn() {
   return (
@@ -36,7 +35,7 @@ export default function Learn() {
                   <span className="window-dec-address-txt">WowMoon.com</span>
                 </div>
                 <div className="window-top-steps-decor-container">
-                  <div className="window-top-steps-decoration active" />
+                  <div className="window-top-steps-decoration" />
                   <div className="window-top-steps-decoration" />
                   <div className="window-top-steps-decoration" />
                   <div className="window-top-steps-decoration" />

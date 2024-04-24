@@ -1,0 +1,11 @@
+.window-main-content-item{
+  min-height: 20.4rem;
+}
+.window-top-steps-decoration{
+  &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+    background: linear-gradient(125deg, #2b43d5 0%, #5626d5 100%);
+  }
+  &:nth-child(4){
+    background-color: #7a9eff;
+  }
+}
