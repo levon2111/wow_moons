@@ -46,6 +46,10 @@ h4{
   font-size: 2.4rem;
   line-height: 2.6rem;
 }
+.small-txt{
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
 h5{
   font-size: 1.8rem;
   line-height: 2.6rem;
@@ -325,7 +329,43 @@ footer {
   line-height: 2.4rem;
   font-weight: 600;
   color: #dcdcdc;
+  margin-bottom: 1.8rem;
 }
+.steps-column-item{
+  width: 100%;
+  padding-inline-start: 1.4rem;
+  position: relative;
+  &:not(:last-child){
+    padding-bottom: 2.4rem;
+    border-inline-start: 0.2rem dashed #4A4A4A;
+  }
+  &:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -0.7rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background: linear-gradient(#353333, #353333) padding-box,
+                linear-gradient(125deg, #2b43d5 0%, #5626d5 100%) border-box;
+    border: 0.1rem solid transparent;
+  }
+  h6{
+    font-weight: 400;
+    color: #B2B2B2;
+    margin-bottom: 0.4rem;
+    &:nth-last-of-type(1){
+      color: #6D6E75;
+    }
+  }
+  .small-txt{
+    color: #F5F5F5;
+    margin-bottom: 0.4rem;
+  }
+}
+
+
 .steps-main-column{
   width: 100%;
   display: flex;
@@ -346,6 +386,10 @@ footer {
   .learn-link-bottom-buttons-row{
     justify-content: flex-end;
   }
+}
+.steps-main-items-wrapper{
+  width: 100%;
+  flex: 1;
 }
 .steps-main-items-container{
   width: 100%;
@@ -457,5 +501,52 @@ footer {
   line-height: 2.2rem;
   font-weight: 600;
   color: #ffffff;
+}
+
+.steps-inputs-container{
+  width: 100%;
+}
+.steps-inputs-content{
+  width: 100%;
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.steps-inputs-row{
+  width: 100%;
+  display: flex;
+  gap: 0.8rem 1.6rem;
+}
+.steps-input-title-container{
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.steps-label{
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  color: #83848a;
+}
+.steps-input{
+  padding: 0 1.2rem;
+  height: 4rem;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 0.1rem solid rgba(74, 74, 78, 0.5);
+  &:focus{
+    border: 0.1rem solid rgba(74, 74, 78, 1);
+  }
+  &::placeholder{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    color: rgba(74, 74, 78, 0.5);
+  }
 }
 //steps section

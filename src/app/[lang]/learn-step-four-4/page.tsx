@@ -1,9 +1,9 @@
 import Header from "@/app/[lang]/includes/header";
 import Footer from "@/app/[lang]/includes/footer";
 import Link from "next/link";
-import "./learn-step-four-1.scss";
+import "./learn-step-four-4.scss";
 
-export default function LearnStepFour() {
+export default function LearnStepFourThree() {
   return (
     <>
       <Header/>
@@ -66,42 +66,17 @@ export default function LearnStepFour() {
                     </div>
                   </div>
                   <div className="steps-main-column">
-                    <h4>Select Meeting Type</h4>
+                    <h4>Summery</h4>
                     <h6>Lorem ipsum dolor sit amet consectetur. Id amet vel sollicitudin mi adipiscing pharetra vitae mauris orci.</h6>
                     <div className="steps-main-items-wrapper">
-                      <div className="steps-main-items-container">
-                        <div className="steps-main-item-card">
-                          <input className="step-radio-hidden" type="radio" name="learn-step-radio" />
-                          <div className="step-item-img-container">
-                            <div className="step-item-img" />
-                            <i className="icon-done-outline" />
-                          </div>
-                          <div className="step-item-info-container">
-                            <p className="step-item-info-title">Online</p>
-                            <h6>Find the right service for every price point. No hourly rates, just project-based pricing.</h6>
-                          </div>
-                          <div className="step-item-bg" />
-                        </div>
-                        <div className="steps-main-item-card">
-                          <input className="step-radio-hidden" type="radio" name="learn-step-radio" />
-                          <div className="step-item-img-container">
-                            <div className="step-item-img" />
-                            <i className="icon-done-outline" />
-                          </div>
-                          <div className="step-item-info-container">
-                            <p className="step-item-info-title">Offline</p>
-                            <h6>Find the right service for every price point. No hourly rates, just project-based pricing.</h6>
-                          </div>
-                          <div className="step-item-bg" />
-                        </div>
-                      </div>
+
                     </div>
                     <div className="learn-link-bottom-buttons-row">
-                      <Link href={"/learn-step-three"} className="learn-bottom-link-btn">
+                      <Link href={"/learn-step-four-2"} className="learn-bottom-link-btn">
                         <i className="icon-back" />
                         Back
                       </Link>
-                      <Link href={"/learn-step-four-2"} className="learn-bottom-link-btn next">Next Step</Link>
+                      <Link href={"/learn-step-four-4"} className="learn-bottom-link-btn next">Next Step</Link>
                     </div>
                   </div>
                 </div>
