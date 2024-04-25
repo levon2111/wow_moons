@@ -1,3 +1,10 @@
 {
-  "hello": "asdsad"
+  "home_page_main_section_heading": "Discover the Perfect\n                                    <span>Service</span>\n                                    Instantly",
+  "home_page_main_section_info": "In WoWMoons we specialize in crafting exceptional user experiences through innovative UI/UX design solutions. Our team of talented designers and developers are passionate about creating intuitive, visually stunning interfaces that captivate users and elevate brands to new heights.",
+  "home_page_search_placeholder": "Search",
+  "home_page_services_mobile": "Mobile App Design",
+  "home_page_services_web_app": "Web App and Software design",
+  "home_page_services_product": "Product Design",
+  "home_page_services_graphic": "Graphic Design and Animations",
+  "home_page_services_packaging": "Packaging and Branding"
 }

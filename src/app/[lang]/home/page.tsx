@@ -11,12 +11,6 @@ import {useDictionary} from "@/app/[lang]/dictionary-provider";
 
 export default function Home() {
     const dictionary = useDictionary()
-    console.log("=======")
-    console.log("=======")
-    console.log("=======")
-    console.log(dictionary)
-    console.log("=======")
-    console.log("=======")
     return (
         <>
             <Header/>
@@ -25,44 +19,40 @@ export default function Home() {
                     <div className="main-container">
                         <div className="home-main-content">
                             <div className="service-label">
-                                <Link href={"/services/marketing-design"}>
-                                    Marketing Design
+                                <Link href={"/services/mobile-app-design"}>
+                                    {dictionary.home_page_services_mobile}
                                 </Link>
                             </div>
                             <div className="service-label">
-                                <Link href={"/services/branding-and-printing"}>
-                                    Branding & Printing
+                                <Link href={"/services/web-app-software-design"}>
+                                    {dictionary.home_page_services_web_app}
                                 </Link>
                             </div>
                             <div className="service-label">
-                                <Link href={"/services/packaging-and-covers"}>
-                                    Packaging and Covers
+                                <Link href={"/services/product-design"}>
+                                    {dictionary.home_page_services_product}
                                 </Link>
                             </div>
                             <div className="service-label">
-                                <Link href={"/services/ui-ux-design"}>
-                                    UI/UX Design
+                                <Link href={"/services/graphic-design-animations"}>
+                                    {dictionary.home_page_services_graphic}
                                 </Link>
                             </div>
                             <div className="service-label">
                                 <Link href={"/services/visual-design"}>
-                                    Visual Design
+                                    {dictionary.home_page_services_packaging}
                                 </Link>
                             </div>
                             <section className="home-main-section">
-                                <h1>Find the Right
-                                    <span>Service</span>
-                                    Right away
-                                </h1>
+                                <h1 dangerouslySetInnerHTML={{__html: dictionary.home_page_main_section_heading}}></h1>
                                 <p className="home-main-section-info">
-                                    Lorem ipsum dolor sit amet consectetur.
-                                    Viverra pellentesque cursus
-                                    scelerisque senectus nisl.
+                                    {dictionary.home_page_main_section_info}
                                 </p>
                                 <div className="home-search-container">
                                     <div className="home-search-wrapper">
                                         <i className="icon-search"/>
-                                        <input className="home-search" type="text" placeholder="Search"/>
+                                        <input className="home-search" type="text"
+                                               placeholder={dictionary.home_page_search_placeholder}/>
                                     </div>
                                     {/*ToDo add active class for open search bottom dropdown*/}
                                     <div className="search-items-wrapper">
