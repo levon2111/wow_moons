@@ -6,6 +6,18 @@ header {
   &.light{
     background-color: #FFFFFF;
   }
+  &.dark{
+    background-color: #000000;
+    .header-logo-container{
+      background-image: url("../../../../public/img/dark-header-logo.svg");
+    }
+    .header-language-btn{
+      background-color: #ffffff;
+      >i{
+        color: #000000;
+      }
+    }
+  }
 }
 .header-content{
   width: 100%;
@@ -20,12 +32,14 @@ header {
   align-items: center;
   justify-content: center;
   margin-inline-end: auto;
-  >img{
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
+  background: url("../../../../public/img/logo-header.svg") no-repeat 50% 50%;
+  background-size: contain;
+  //>img{
+  //  display: block;
+  //  width: 100%;
+  //  height: auto;
+  //  object-fit: contain;
+  //}
 }
 .header-nav{
   display: flex;

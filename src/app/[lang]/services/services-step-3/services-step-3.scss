@@ -1,5 +1,6 @@
 .steps-column-item{
-  &:nth-child(1 of .steps-column-item), &:nth-child(2 of .steps-column-item), &:nth-child(3 of .steps-column-item), &:nth-child(4 of .steps-column-item){
+  &:nth-child(1 of .steps-column-item), &:nth-child(2 of .steps-column-item){
+    border-inline-start: 0.2rem dashed #2b43d5;
     &:before{
       background: linear-gradient(125deg, #2b43d5 0%, #5626d5 100%) padding-box,
       linear-gradient(125deg, #2b43d5 0%, #5626d5 100%) border-box;

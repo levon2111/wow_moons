@@ -38,9 +38,7 @@ export default function Header() {
         <header className="light">
             <div className="main-container">
                 <div className="header-content">
-                    <Link className="header-logo-container" href={"/home"}>
-                        <img src="/img/logo-header.svg"/>
-                    </Link>
+                    <Link className="header-logo-container" href={"/home"} />
                     <nav className="header-nav">
                         <Link className="header-link" href={"/about"}>About Us</Link>
                         <Link className="header-link" href={"/services"}>Services</Link>

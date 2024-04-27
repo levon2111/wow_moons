@@ -2,6 +2,7 @@ import React from "react";
 import Header from "@/app/[lang]/includes/header";
 import Footer from "@/app/[lang]/includes/footer";
 import CardItem from "@/_components/CardItem";
+import Link from "next/link";
 
 export default function SingleService({params}: {
   params: {
@@ -20,9 +21,9 @@ export default function SingleService({params}: {
                 Lorem ipsum dolor sit amet consectetur. Viverra pellentesque<br/>
                 cursus scelerisque senectus nisl.
               </p>
-              <button type="button" className="single-service-banner-btn">
+              <Link href={"/services/services-step-1"} className="single-service-banner-link-btn">
                 <span className="single-service-banner-btn-txt">Get Start</span>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
