@@ -3,6 +3,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 999;
+  box-shadow: 0 -0.2rem 0.4rem 0 #595959;
   &.light{
     background-color: #FFFFFF;
   }
@@ -167,7 +168,10 @@ header {
   color: #83848a;
   transition: color 120ms;
 }
-.get-btn{
+.get-btn-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   outline: none;
   min-width: 15.6rem;

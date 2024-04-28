@@ -4,6 +4,7 @@ import ShareWidget from './ShareWidget';
 import {media} from "@/utils/media";
 import ArticleImage from "@/_components/ArticleImage";
 import Container from "@/_components/Container";
+import "../../styles/global.scss";
 
 interface HeaderProps {
     title: string;

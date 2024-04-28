@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import CustomCursorContext from "@/contexts/CustomCursor/context/CustomCursorContext";
 import {media} from "@/utils/media";
 import {getAllPosts} from "@/utils/postsFetcher";
+import "../../styles/global.scss";
 
 import MetadataHead from "@/views/SingleArticlePage/MetadataHead";
 import dynamic from "next/dynamic";
@@ -124,10 +125,6 @@ const SegmentButtonGroup = styled.div`
 
 const SegmentItem = styled(Button)`
     background: none;
-    //display: inline-block;
-    //text-decoration: none;
-    //text-align: center;
-    //font-family: var(--font);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,18 +138,18 @@ const SegmentItem = styled(Button)`
     will-change: transform;
     padding: 0 1.2rem;
     text-transform: none;
-    color: #ffffff;
+    color: #0c0f12;
     border: 0.1rem solid #5e5e5e;
     cursor: pointer;
-    //background: var(--gray_4);
-    //border: 2px solid var(--gray_4);
-    //color: var(--gray_7);
     width: max-content;
+    &:hover{
+        color: #000000;
+    }
 
     &.selected {
-        background: var(--gray_10);
-        border-color: var(--gray_10);
-        color: var(--gray_1);
+        //background: var(--gray_10);
+        //border-color: var(--gray_10);
+        //color: var(--gray_1);
     }
     @media screen and (max-width: 768px) {
         font-size: 1.6rem;
@@ -242,6 +239,7 @@ const BlogGridContainer = styled(Container)`
     grid-template-columns: 1fr;
     //gap: 1.6rem;
     z-index: 11;
+    color: #0c0f12;
 
     // & > ${Description} {
     //     max-width: 50%;

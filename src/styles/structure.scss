@@ -8,6 +8,7 @@ html{
   font-family: 'Proxima', sans-serif;
   font-weight: 400;
   color: #FFFFFF;
+  font-size: 10px;
   line-height: 1;
   //background-color: #080808;
   @media screen and (min-width: 1025px) {
@@ -49,27 +50,32 @@ html{
 //@media screen and (min-width: 1200px) {
 //  html { font-size:10px;}
 //}
+//@media screen and (min-width: 1024px) {
+//  html { font-size: 1.214vmin;}
+//}
 @media screen and (min-width: 1600px) {
-  html{font-size: 11.9px;}
+  //html{font-size: 11.9px;}
 }
 @media screen and (min-width: 1400px)  and (max-width: 1599px){
-  html{font-size: 11px;}
+  //html{font-size: 11px;}
 }
 @media screen and (min-width: 1200px) and (max-width: 1439px) {
-  html{font-size: 10px;}
+  //html{font-size: 10px;}
 }
 @media screen and (max-width: 1199px) {
   html{font-size: 9px;}
 }
 @media screen and (max-width: 1025px) {
-  html { font-size: 8px;}
+  //html { font-size: 8px;}
+  //html { font-size: 8px;}
+  html { font-size: 1.214vmin;}
 }
-@media screen and (max-width: 761px) {
-  //html { font-size:1.5vmin;}
+@media screen and (max-width: 768px) {
+  html { font-size: 1.303vmin;}
+  //html { font-size: 1.214vmin;}
+}
+@media screen and (max-width: 568px) {
   html { font-size: 2.2vmin;}
 }
-//@media screen and (max-width: 761px) {
-//  html{font-size: 2.6666vmin;}
-//}
 
 

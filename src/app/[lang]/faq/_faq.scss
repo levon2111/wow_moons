@@ -18,7 +18,7 @@
 .faq-title{
   margin-bottom: 1.6rem;
   color: #000000;
-  @media screen and (max-width: 761px) {
+  @media screen and (max-width: 768px) {
     margin-bottom: 1.2rem;
   }
 }
@@ -30,7 +30,7 @@
   color: #83848a;
   max-width: 68rem;
   margin-bottom: 4rem;
-  @media screen and (max-width: 761px) {
+  @media screen and (max-width: 768px) {
     font-size: 2rem;
     margin-bottom: 2.4rem;
   }
@@ -51,7 +51,7 @@
     width: 2.4rem;
     height: 2.4rem;
   }
-  @media screen and (max-width: 761px) {
+  @media screen and (max-width: 768px) {
     height:4.8rem;
     margin-bottom: 4rem;
     >i{
@@ -77,7 +77,7 @@
     font-weight: 600;
     color: #83848a;
   }
-  @media screen and (max-width: 761px) {
+  @media screen and (max-width: 768px) {
     padding-inline-start: 4.8rem;
     font-size: 1.6rem;
     &::placeholder{
@@ -102,7 +102,7 @@
   &::-webkit-scrollbar {
     display: none;
   }
-  @media screen and (max-width: 761px) {
+  @media screen and (max-width: 768px) {
     margin-bottom: 3.2rem;
   }
 }
@@ -156,7 +156,7 @@
   text-align: center;
   color: #ffffff;
   transition: color 160ms;
-  @media screen and (max-width: 761px) {
+  @media screen and (max-width: 768px) {
     font-size: 1.8rem;
     line-height: 2.2rem;
   }
@@ -188,7 +188,7 @@
       margin-top: 1.6rem;
     }
   }
-  @media screen and (max-width: 761px) {
+  @media screen and (max-width: 768px) {
     padding: 1.8rem;
     &:not(:last-child){
       margin-bottom: 1.8rem;
@@ -209,7 +209,7 @@
   color: #83848a;
   transition: color 200ms;
   padding-inline-end: 1.2rem;
-  @media screen and (max-width: 761px) {
+  @media screen and (max-width: 768px) {
     font-size: 2.2rem;
     line-height: 2.8rem;
   }

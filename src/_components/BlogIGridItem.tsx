@@ -46,6 +46,7 @@ const BlogGridItem = ({ img, link, date, description, title }: Props) => {
 
 const Title = styled.h3`
   font-size: 3rem;
+  line-height: 3.4rem;
   font-weight: 600;
   color: var(--gray_8);
 `;
@@ -54,7 +55,6 @@ const Description = styled.p`
   font-size: 2.2rem;
   line-height: 2.6rem;
   font-weight: 400;
-  //color: var(--gray_8);
   color: #a9a8a8;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -109,7 +109,6 @@ const Content = styled.div`
   & a {
     display: flex;
     align-items: center;
-    //color: var(--blue_6);
     font-size: 2rem;
     line-height: 2.2rem;
     color: #019dfe;

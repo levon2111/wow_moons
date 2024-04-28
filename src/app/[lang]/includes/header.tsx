@@ -70,9 +70,9 @@ export default function Header() {
                                 </div>
                                 : null
                             }
-                            <button type="button" className="get-btn">
+                            <Link href={"/contact-us/email"} className="get-btn-link">
                                 <span className="get-btn-txt">Get in Touch</span>
-                            </button>
+                            </Link>
                         </div>
                     </nav>
                 </div>

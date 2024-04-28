@@ -216,6 +216,7 @@ const CustomContainer = styled(Container)`
     position: relative;
     //margin: 12rem auto;
     z-index: 11;
+    color: #0c0f12;
 
     ${media('<=tablet')} {
         //margin: 7.2rem auto;
