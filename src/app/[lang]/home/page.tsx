@@ -20,7 +20,8 @@ export default function Home() {
                         <div className="home-main-content">
                             <div className="service-label">
                                 <Link href={"/services/mobile-app-design"}>
-                                    {dictionary.home_page_services_mobile}
+                                    {dictionary.home_page_services_packaging}
+
                                 </Link>
                             </div>
                             <div className="service-label">
@@ -30,17 +31,17 @@ export default function Home() {
                             </div>
                             <div className="service-label">
                                 <Link href={"/services/product-design"}>
-                                    {dictionary.home_page_services_product}
-                                </Link>
-                            </div>
-                            <div className="service-label">
-                                <Link href={"/services/graphic-design-animations"}>
                                     {dictionary.home_page_services_graphic}
                                 </Link>
                             </div>
                             <div className="service-label">
+                                <Link href={"/services/graphic-design-animations"}>
+                                    {dictionary.home_page_services_product}
+                                </Link>
+                            </div>
+                            <div className="service-label">
                                 <Link href={"/services/visual-design"}>
-                                    {dictionary.home_page_services_packaging}
+                                    {dictionary.home_page_services_mobile}
                                 </Link>
                             </div>
                             <section className="home-main-section">
@@ -84,8 +85,8 @@ export default function Home() {
                 <section className="services-section-container">
                     <div className="main-container">
                         <div className="services-section">
-                            <h5 className="section-subtitle">Lorem ipsum dolor</h5>
-                            <h3 className="section-title">Popular Services</h3>
+                            <h5 className="section-subtitle">Where Creativity Meets Demand</h5>
+                            <h3 className="section-title">Our Masterpieces</h3>
                             <div className="services-items-wrapper">
                                 <CardItem/>
                                 <CardItem/>
@@ -98,14 +99,21 @@ export default function Home() {
                     <div className="main-container">
                         <div className="middle-banner-content">
                             <div className="middle-banner-info">
-                                <h5 className="middle-banner-min-txt">Lorem ipsum dolor</h5>
-                                <h3 className="middle-banner-title light">We Will Help You Grow</h3>
+                                <h5 className="middle-banner-min-txt">Empower Your Creativity</h5>
+                                <h3 className="middle-banner-title light">Unlock Your Design Potential</h3>
                                 <span className="middle-banner-info-txt">
-                  Lorem ipsum dolor sit amet consectetur. Augue eu vel in eros tincidunt neque egestas.
-                  Proin ante urna natoque at vivamus turpis. Sem in morbi cursus dignissim donec.
-                </span>
+                                    {/* eslint-disable-next-line react/no-unescaped-entities */}
+
+                                    Immerse yourself in design with our expert-guided courses. Join a global community of 340+ designers, enhancing skills and mastering innovative techniques. Our customized courses are your stepping stones from passion to profession.
+                                        {/* eslint-disable-next-line react/no-unescaped-entities */}
+                                    Let's create something amazing together.
+                                </span>
                                 <button type="button" className="middle-banner-btn">
-                                    <span>Learn More</span>
+                                    <span>
+                                        <Link href={"/learn"}>
+                                          Learn More
+                                        </Link>
+                                    </span>
                                 </button>
                             </div>
                             <div className="middle-banner-person-info">
@@ -120,36 +128,32 @@ export default function Home() {
                 <section className="benefit-section">
                     <div className="main-container">
                         <div className="benefit-section-container">
-                            <h5 className="section-subtitle">Lorem ipsum dolor</h5>
-                            <h3 className="section-title">The best part? Everything.</h3>
+                            <h5 className="section-subtitle">Value-Driven Excellence</h5>
+                            <h3 className="section-title">Your Vision, Our Commitment</h3>
                             <div className="benefit-section-items-container">
                                 <div className="benefit-section-item">
                                     <div className="benefit-item-inner-img"/>
-                                    <p className="benefit-item-title">Stick to your budget</p>
-                                    <h5 className="benefit-item-info">Find the right service for every price point. No
-                                        hourly rates, just project-based pricing.</h5>
+                                    <p className="benefit-item-title">Budget-Friendly Brilliance</p>
+                                    <h5 className="benefit-item-info">Get premium services at prices that work for you. Our transparent, flat-rate pricing ensures quality that aligns with your financial plan.</h5>
                                 </div>
                                 <div className="benefit-section-item">
                                     <div className="benefit-item-inner-img"/>
-                                    <p className="benefit-item-title">Get quality work done quickly</p>
-                                    <h5 className="benefit-item-info">Hand your project over to a talented freelancer in
-                                        minutes, get long-lasting results.</h5>
+                                    <p className="benefit-item-title">Swift & Stellar</p>
+                                    <h5 className="benefit-item-info">Match with skilled professionals in moments, not months. Expect enduring quality, delivered at the speed of thought.</h5>
                                 </div>
                                 <div className="benefit-section-item">
                                     <div className="benefit-item-inner-img"/>
                                     {/* eslint-disable-next-line react/no-unescaped-entities */}
-                                    <p className="benefit-item-title">Pay when you're happy</p>
-                                    <h5 className="benefit-item-info">Upfront quotes mean no surprises. Payments only
-                                        get released when you approve.</h5>
+                                    <p className="benefit-item-title">Satisfaction Guaranteed</p>
+                                    <h5 className="benefit-item-info">Enjoy peace of mind with our satisfaction-first policy. Payment is due only when you’re delighted — because your happiness is the true final draft.</h5>
                                     <div className="benefit-item-top-shine">
-                                        <span className="benefit-item-top-shine-txt">Such Company Values!</span>
+                                        <span className="benefit-item-top-shine-txt">Our Promise, Your Peace of Mind</span>
                                     </div>
                                 </div>
                                 <div className="benefit-section-item">
                                     <div className="benefit-item-inner-img"/>
-                                    <p className="benefit-item-title">Count on 24/7 support</p>
-                                    <h5 className="benefit-item-info">Our round-the-clock support team is available to
-                                        help anytime, anywhere.</h5>
+                                    <p className="benefit-item-title">Reliable Resources Round-the-Clock</p>
+                                    <h5 className="benefit-item-info">Day or night, our dedicated support team stands ready to assist. Wherever you are, we’re just a call or click away.</h5>
                                 </div>
                             </div>
                         </div>
