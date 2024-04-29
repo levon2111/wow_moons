@@ -40,12 +40,12 @@ export default function Header() {
                 <div className="header-content">
                     <Link className="header-logo-container" href={"/home"}/>
                     <nav className="header-nav">
-                        <Link className="header-link" href={"/about"}>About Us</Link>
-                        <Link className="header-link" href={"/services"}>Services</Link>
-                        <Link className="header-link" href={"/learn"}>Learn</Link>
-                        <Link className="header-link" href={"/blog"}>Blog</Link>
-                        <Link className="header-link" href={"/contact-us"}>Get in Touch</Link>
-                        <Link className="header-link" href={"/meeting-scheduler"}>Book a Meeting</Link>
+                        <Link className="header-link" href={"/services"}>{dictionary.header_services}</Link>
+                        <Link className="header-link" href={"/learn"}>{dictionary.header_learn}</Link>
+                        <Link className="header-link" href={"/blog"}>{dictionary.header_blog}</Link>
+                        <Link className="header-link" href={"/meeting-scheduler"}>{dictionary.header_meeting}</Link>
+                        <Link className="header-link" href={"/about"}>{dictionary.header_about}</Link>
+
                         <div className="header-language-btn-container">
                             {!pathname?.startsWith("/blog") && !pathname?.startsWith("/case-study") ?
 
@@ -57,27 +57,32 @@ export default function Header() {
                                                 <button type="button" className="languages-dropdown-row-btn en"
                                                         onClick={() => switchLang('en')}>
                                                     <span className="languages-img"/>
-                                                    <span className="languages-dropdown-row-btn-txt">English</span>
+                                                    <span
+                                                        className="languages-dropdown-row-btn-txt">{dictionary.header_lang_en}</span>
                                                 </button>
                                                 <button type="button" className="languages-dropdown-row-btn en"
                                                         onClick={() => switchLang('es')}>
                                                     <span className="languages-img"/>
-                                                    <span className="languages-dropdown-row-btn-txt">Spanish</span>
+                                                    <span
+                                                        className="languages-dropdown-row-btn-txt">{dictionary.header_lang_es}</span>
                                                 </button>
                                                 <button type="button" className="languages-dropdown-row-btn en"
                                                         onClick={() => switchLang('de')}>
                                                     <span className="languages-img"/>
-                                                    <span className="languages-dropdown-row-btn-txt">Deutsch</span>
+                                                    <span
+                                                        className="languages-dropdown-row-btn-txt">{dictionary.header_lang_de}</span>
                                                 </button>
                                                 <button type="button" className="languages-dropdown-row-btn en"
                                                         onClick={() => switchLang('it')}>
                                                     <span className="languages-img"/>
-                                                    <span className="languages-dropdown-row-btn-txt">Italian</span>
+                                                    <span
+                                                        className="languages-dropdown-row-btn-txt">{dictionary.header_lang_it}</span>
                                                 </button>
                                                 <button type="button" className="languages-dropdown-row-btn en"
                                                         onClick={() => switchLang('fr')}>
                                                     <span className="languages-img"/>
-                                                    <span className="languages-dropdown-row-btn-txt">French</span>
+                                                    <span
+                                                        className="languages-dropdown-row-btn-txt">{dictionary.header_lang_fr}</span>
                                                 </button>
                                             </div>
                                         </div>
@@ -86,7 +91,7 @@ export default function Header() {
                                 : null
                             }
                             <Link href={"/contact-us/email"} className="get-btn-link">
-                                <span className="get-btn-txt">Get in Touch</span>
+                                <span className="get-btn-txt">{dictionary.header_contact}</span>
                             </Link>
                         </div>
                     </nav>
