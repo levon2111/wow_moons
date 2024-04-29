@@ -38,7 +38,7 @@ export default function Header() {
         <header className="light">
             <div className="main-container">
                 <div className="header-content">
-                    <Link className="header-logo-container" href={"/home"} />
+                    <Link className="header-logo-container" href={"/home"}/>
                     <nav className="header-nav">
                         <Link className="header-link" href={"/about"}>About Us</Link>
                         <Link className="header-link" href={"/services"}>Services</Link>
@@ -63,6 +63,21 @@ export default function Header() {
                                                         onClick={() => switchLang('es')}>
                                                     <span className="languages-img"/>
                                                     <span className="languages-dropdown-row-btn-txt">Spanish</span>
+                                                </button>
+                                                <button type="button" className="languages-dropdown-row-btn en"
+                                                        onClick={() => switchLang('de')}>
+                                                    <span className="languages-img"/>
+                                                    <span className="languages-dropdown-row-btn-txt">Deutsch</span>
+                                                </button>
+                                                <button type="button" className="languages-dropdown-row-btn en"
+                                                        onClick={() => switchLang('it')}>
+                                                    <span className="languages-img"/>
+                                                    <span className="languages-dropdown-row-btn-txt">Italian</span>
+                                                </button>
+                                                <button type="button" className="languages-dropdown-row-btn en"
+                                                        onClick={() => switchLang('fr')}>
+                                                    <span className="languages-img"/>
+                                                    <span className="languages-dropdown-row-btn-txt">French</span>
                                                 </button>
                                             </div>
                                         </div>
