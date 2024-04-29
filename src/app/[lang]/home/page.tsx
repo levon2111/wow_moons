@@ -85,8 +85,8 @@ export default function Home() {
                 <section className="services-section-container">
                     <div className="main-container">
                         <div className="services-section">
-                            <h5 className="section-subtitle">Where Creativity Meets Demand</h5>
-                            <h3 className="section-title">Our Masterpieces</h3>
+                            <h5 className="section-subtitle">{dictionary.home_services_subtitle}</h5>
+                            <h3 className="section-title">{dictionary.home_services_title}</h3>
                             <div className="services-items-wrapper">
                                 <CardItem/>
                                 <CardItem/>
