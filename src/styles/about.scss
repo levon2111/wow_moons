@@ -3,6 +3,9 @@
   height: 58.6rem;
   margin-bottom: 8rem;
   position: relative;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 4rem;
+  }
 }
 .about-banner-content-container{
   width: 100%;
@@ -43,12 +46,18 @@
 .about-middle-section{
   width: 100%;
   margin-bottom: 8rem;
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 4rem;
+  }
 }
 .about-main-section-content{
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr;
   gap: 2.4rem;
+  @media screen and (max-width: 568px) {
+    grid-template-columns: 1fr;
+  }
 }
 .about-main-section-info-container{
   display: flex;
@@ -70,6 +79,9 @@
 .middle-images-section{
   min-height: 66rem;
   position: relative;
+  @media screen and (max-width: 568px) {
+    min-height: 45rem;
+  }
 }
 .middle-main-img{
   position: absolute;
@@ -109,18 +121,33 @@
   width: 19rem;
   height: 9.4rem;
   object-fit: contain;
+  @media screen and (max-width: 568px) {
+
+  }
+  @media screen and (max-width: 568px) {
+    width: 12rem;
+    height: 5.4rem;
+  }
 }
 
 .about-logo-row-section{
   width: 100%;
   background-color: #eff1f5;
   margin-bottom: 8rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 4rem;
+  }
 }
 .about-logo-row-content{
   display: flex;
   align-items: center;
   width: 100%;
   height: 12.8rem;
+  @media screen and (max-width: 1024px) {
+    height: 8rem;
+  }
 }
 .about-logo-row-title{
   font-size: 2.4rem;
@@ -128,12 +155,19 @@
   font-weight: 600;
   color: #83848a;
   margin-inline-end: 2.4rem;
+  white-space: nowrap;
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 .about-logo-row-container{
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
+  flex: 0 0 auto;
+  min-width: 0;
   width: 14rem;
   font-weight: 600;
   font-size: 4rem;
@@ -145,16 +179,26 @@
   &:first-of-type{
     margin-inline-start: auto;
   }
+  @media screen and (max-width: 1024px) {
+    width: 10rem;
+    font-size: 2.4rem;
+  }
 }
 .our-mission-section{
   width: 100%;
   margin-bottom: 8rem;
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 4rem;
+  }
 }
 .our-mission-section-container{
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2.4rem;
+  @media screen and (max-width: 568px) {
+    grid-template-columns: 1fr;
+  }
 }
 .our-mission-img-column{
   height: 48rem;
@@ -164,6 +208,9 @@
     width: 100%;
     height: auto;
     object-fit: contain;
+  }
+  @media screen and (max-width: 568px) {
+    height: 32rem;
   }
 }
 .our-mission-info-column{

@@ -104,13 +104,9 @@ export default function Home() {
                                 <span className="middle-banner-info-txt">
                                     {dictionary.home_creativity_description}
                                 </span>
-                                <button type="button" className="middle-banner-btn">
-                                    <span>
-                                        <Link href={"/learn"}>
-                                          {dictionary.home_learn_more}
-                                        </Link>
-                                    </span>
-                                </button>
+                                <Link className="middle-banner-btn" href={"/learn"}>
+                                    {dictionary.home_learn_more}
+                                </Link>
                             </div>
                             <div className="middle-banner-person-info">
                                 <div className="banner-students-info">
