@@ -19,9 +19,8 @@ export default function Home() {
                     <div className="main-container">
                         <div className="home-main-content">
                             <div className="service-label">
-                                <Link href={"/services/mobile-app-design"}>
+                                <Link href={"/services/packaging-and-branding"}>
                                     {dictionary.home_page_services_packaging}
-
                                 </Link>
                             </div>
                             <div className="service-label">
@@ -30,17 +29,17 @@ export default function Home() {
                                 </Link>
                             </div>
                             <div className="service-label">
-                                <Link href={"/services/product-design"}>
+                                <Link href={"/services/graphic-and-animations"}>
                                     {dictionary.home_page_services_graphic}
                                 </Link>
                             </div>
                             <div className="service-label">
-                                <Link href={"/services/graphic-design-animations"}>
+                                <Link href={"/services/product-design"}>
                                     {dictionary.home_page_services_product}
                                 </Link>
                             </div>
                             <div className="service-label">
-                                <Link href={"/services/visual-design"}>
+                                <Link href={"/services/mobile-app-design"}>
                                     {dictionary.home_page_services_mobile}
                                 </Link>
                             </div>
