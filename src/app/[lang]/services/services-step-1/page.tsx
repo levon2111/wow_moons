@@ -1,10 +1,15 @@
+"use client"
+
 import Header from "@/app/[lang]/includes/header";
 import Footer from "@/app/[lang]/includes/footer";
 import Link from "next/link";
 import "./services-step-1.scss";
 import SchedulerSideBar from "@/app/[lang]/includes/schedulerSideBar";
+import {useDictionary} from "@/app/[lang]/dictionary-provider";
 
 export default function ServicesStepOne() {
+    const dictionary = useDictionary()
+
     return (
         <>
             <Header/>
@@ -12,7 +17,7 @@ export default function ServicesStepOne() {
                 <div className="main-container">
                     <div className="steps-main-wrapper light">
                         <div className="steps-top-row">
-                            <h6>Meeting Scheduler</h6>
+                            <h6>{dictionary.meeting_scheduler_step_1_title}</h6>
                             <Link href={"/home"} className={"steps-top-row-close-btn"}>
                                 <i className="icon-close"/>
                             </Link>
@@ -20,10 +25,8 @@ export default function ServicesStepOne() {
                         <div className="steps-main-content">
                             <SchedulerSideBar/>
                             <div className="steps-main-column">
-                                <h4>Choose Your Meeting Type</h4>
-                                <h6>Select the type of meeting that best suits your needs to ensure a seamless
-                                    collaboration with our design team. We offer flexible options to connect, discuss,
-                                    and execute your projects effectively.</h6>
+                                <h4>{dictionary.meeting_scheduler_step_1_subtitle}</h4>
+                                <h6>{dictionary.meeting_scheduler_step_1_description}</h6>
                                 <div className="steps-main-items-wrapper">
                                     <div className="steps-main-items-container">
                                         <div className="steps-main-item-card">
@@ -33,11 +36,8 @@ export default function ServicesStepOne() {
                                                 <i className="icon-done-outline"/>
                                             </div>
                                             <div className="step-item-info-container">
-                                                <p className="step-item-info-title">Online</p>
-                                                <h6>Ideal for quick discussions or ongoing project updates. Connect with
-                                                    us from anywhere in the world without the need for travel. Enjoy the
-                                                    convenience of online meetings with fixed project-based pricing — no
-                                                    hourly rates apply.</h6>
+                                                <p className="step-item-info-title">{dictionary.meeting_scheduler_step_1_online}</p>
+                                                <h6>{dictionary.meeting_scheduler_step_1_online_description}</h6>
                                             </div>
                                             <div className="step-item-bg"/>
                                         </div>
@@ -48,19 +48,16 @@ export default function ServicesStepOne() {
                                                 <i className="icon-done-outline"/>
                                             </div>
                                             <div className="step-item-info-container">
-                                                <p className="step-item-info-title">Offline</p>
-                                                <h6>Perfect for in-depth discussions and detailed project briefings.
-                                                    Meet with our team in person for a tailored service experience. Like
-                                                    our online meetings, we offer fixed project-based pricing to keep
-                                                    your budget predictable.</h6>
+                                                <p className="step-item-info-title">{dictionary.meeting_scheduler_step_1_offline}</p>
+                                                <h6>{dictionary.meeting_scheduler_step_1_offline_description}</h6>
                                             </div>
                                             <div className="step-item-bg"/>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="learn-link-bottom-buttons-row">
-                                    <Link href={"/services/services-step-2"} className="learn-bottom-link-btn next">Next
-                                        Step</Link>
+                                    <Link href={"/services/services-step-2"}
+                                          className="learn-bottom-link-btn next">{dictionary.meeting_wizard_next}</Link>
                                 </div>
                             </div>
                         </div>

@@ -1,10 +1,15 @@
+"use client"
+
 import Header from "@/app/[lang]/includes/header";
 import Footer from "@/app/[lang]/includes/footer";
 import Link from "next/link";
 import "./services-step-2.scss";
 import SchedulerSideBar from "@/app/[lang]/includes/schedulerSideBar";
+import {useDictionary} from "@/app/[lang]/dictionary-provider";
 
 export default function ServicesStepTwo() {
+    const dictionary = useDictionary()
+
     return (
         <>
             <Header/>
@@ -12,7 +17,7 @@ export default function ServicesStepTwo() {
                 <div className="main-container">
                     <div className="steps-main-wrapper light">
                         <div className="steps-top-row">
-                            <h6>Meeting Scheduler</h6>
+                            <h6>{dictionary.meeting_scheduler_step_1_title}</h6>
                             <button type="button" className="steps-top-row-close-btn">
                                 <i className="icon-close"/>
                             </button>
@@ -20,19 +25,18 @@ export default function ServicesStepTwo() {
                         <div className="steps-main-content">
                             <SchedulerSideBar/>
                             <div className="steps-main-column">
-                                <h4>Select Your Preferred Date</h4>
-                                <h6>Choose a date from the calendar below for your meeting. Available days are
-                                    highlighted. Click on your preferred date to proceed to selecting a time.</h6>
+                                <h4>{dictionary.meeting_wizard_step_2_title}</h4>
+                                <h6>{dictionary.meeting_wizard_step_2_description}</h6>
                                 <div className="steps-main-items-wrapper">
                                     <div className="choose-time-container">
                                         <div className="choose-time-top-row">
                                             <p className="small-txt">January 2024</p>
                                             <button type="button" className="choose-time-top-btn">
                                                 <i className="icon-back"/>
-                                                Previous Month
+                                                {dictionary.meeting_wizard_step_2_previous_month}
                                             </button>
                                             <button type="button" className="choose-time-top-btn">
-                                                Next Month
+                                                {dictionary.meeting_wizard_step_2_next_month}
                                                 <i className="icon-next"/>
                                             </button>
                                         </div>
@@ -87,7 +91,7 @@ export default function ServicesStepTwo() {
                                                     <h6>
                                                         7
                                                         <span
-                                                            className="not-availible-info">Here is not availible time</span>
+                                                            className="not-availible-info">{dictionary.meeting_wizard_step_2_no_time}</span>
                                                     </h6>
                                                 </div>
                                                 <div className="chose-days-item">
@@ -112,7 +116,7 @@ export default function ServicesStepTwo() {
                                                     <h6>
                                                         14
                                                         <span
-                                                            className="not-availible-info">Here is not availible time</span>
+                                                            className="not-availible-info">{dictionary.meeting_wizard_step_2_no_time}</span>
                                                     </h6>
                                                 </div>
                                                 <div className="chose-days-item">
@@ -188,10 +192,10 @@ export default function ServicesStepTwo() {
                                 <div className="learn-link-bottom-buttons-row">
                                     <Link href={"/services/services-step-1"} className="learn-bottom-link-btn">
                                         <i className="icon-back"/>
-                                        Back
+                                        {dictionary.meeting_wizard_step_2_back}
                                     </Link>
-                                    <Link href={"/services/services-step-3"} className="learn-bottom-link-btn next">Next
-                                        Step</Link>
+                                    <Link href={"/services/services-step-3"}
+                                          className="learn-bottom-link-btn next">{dictionary.meeting_wizard_next}</Link>
                                 </div>
                             </div>
                         </div>
