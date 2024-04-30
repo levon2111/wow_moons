@@ -31,7 +31,7 @@ export default function Services() {
                                 <p className="services-main-section-title">{dictionary.services_all}</p>
                                 <nav className="services-filters">
                                     <button type="button" className="services-type-select-btn">
-                                        <span className="services-type-select-btn-txt">All Services</span>
+                                        <span className="services-type-select-btn-txt">{dictionary.services_all}</span>
                                     </button>
                                     <button type="button" className="services-type-select-btn">
                                         <span className="services-type-select-btn-txt">Printing</span>
