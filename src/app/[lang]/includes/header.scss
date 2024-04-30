@@ -36,7 +36,7 @@ header {
   margin-inline-end: auto;
   background: url("../../../../public/img/logo-header.svg") no-repeat 50% 50%;
   background-size: contain;
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 1024px) {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -77,10 +77,10 @@ header {
       pointer-events: auto;
     }
   }
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1025px){
     display: none;
   }
-  @media screen and (max-width: 1023px){
+  @media screen and (max-width: 1024px){
     display: flex;
   }
 }
@@ -88,7 +88,7 @@ header {
   display: flex;
   align-items: center;
   gap: 3.2rem;
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 1024px) {
     position: absolute;
     top: 100%;
     left: -110%;

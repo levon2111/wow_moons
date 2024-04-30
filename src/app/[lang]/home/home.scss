@@ -193,6 +193,20 @@
       background-size: contain;
     }
   }
+  @media screen and (max-width: 568px) {
+    margin-bottom: 4rem;
+    .section-title{
+      width: 100%;
+      padding-right: 8.4rem;
+      &:after{
+        left: auto;
+        right: 0;
+        top: -1rem;
+        width: 8rem;
+        height: 6rem;
+      }
+    }
+  }
 }
 .services-section{
   width: 100%;
@@ -201,11 +215,17 @@
   position: relative;
   display: inline-block;
   margin-bottom: 4rem;
+  @media screen and (max-width: 568px) {
+    margin-bottom: 2rem;
+  }
 }
 
 .middle-banner{
   width: 100%;
   margin-bottom: 8rem;
+  @media screen and (max-width: 568px) {
+    margin-bottom: 4rem;
+  }
 }
 .middle-banner-content{
   display: flex;
@@ -244,6 +264,19 @@
     background: url("../../../../public/img/person-back.png") no-repeat 0 0;
     background-size: contain;
   }
+  @media screen and (max-width: 1024px) {
+    padding: 2rem 36% 2rem 3rem;
+  }
+  @media screen and (max-width: 568px) {
+    padding-bottom: 26rem;
+    padding-right: 3rem;
+    &:after{
+      top: 78%;
+      right: 0.2rem;
+      width: 25rem;
+      height: 22rem;
+    }
+  }
 }
 .middle-banner-info{
   max-width: 50.6rem;
@@ -271,6 +304,17 @@
     background-size: contain;
     z-index: 11;
   }
+  @media screen and (max-width: 1024px) {
+    right: 0;
+    width: 30%;
+    &:before{
+
+    }
+  }
+  @media screen and (max-width: 568px) {
+    width: 50%;
+    height: 40%;
+  }
 }
 .banner-students-info{
   position: absolute;
@@ -297,6 +341,14 @@
     background-size: contain;
     z-index: 11;
   }
+  @media screen and (max-width: 1024px) {
+    top: 25rem;
+    left: -1.8rem;
+  }
+  @media screen and (max-width: 568px) {
+    top: 14rem;
+    left: -13rem;
+  }
 }
 .banner-students-info-txt{
   font-size: 1.2rem;
@@ -311,6 +363,9 @@
 .middle-banner-title{
   margin-bottom: 2.4rem;
   //color: #ffffff;
+  @media screen and (max-width: 568px) {
+    margin-bottom: 1.4rem;
+  }
 }
 .middle-banner-info-txt{
   display: block;
@@ -319,6 +374,11 @@
   line-height: 2.6rem;
   color: #b6b9c2;
   margin-bottom: 4rem;
+  @media screen and (max-width: 568px) {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
 }
 .middle-banner-btn{
   min-width: 14.2rem;
@@ -346,6 +406,9 @@
 .benefit-section{
   width: 100%;
   margin-bottom: 8rem;
+  @media screen and (max-width: 568px) {
+    margin-bottom: 4rem;
+  }
 }
 .benefit-section-container{
   width: 100%;
@@ -363,6 +426,7 @@
   padding: 6rem 4rem;
   border-radius: 1.2rem;
   position: relative;
+  box-shadow: 0 0 0.4rem #cdcdcd;
   &:first-child{
     background-color: #F3FFF5;
     .benefit-item-inner-img{
@@ -388,10 +452,14 @@
       background-image: url("../../../../public/img/support.png");
     }
   }
+  @media screen and (max-width: 568px) {
+    min-height: 24rem;
+    padding: 3rem;
+  }
 }
 .benefit-item-inner-img{
-  width: 5rem;
-  height: 5rem;
+  width: 7.4rem;
+  height: 7.4rem;
   margin-bottom: 1.2rem;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -413,15 +481,18 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: -2rem;
+  right: 0;
   top: -5.3rem;
-  width: 16.4rem;
-  height: 10.6rem;
+  width: 21rem;
+  height: 14rem;
   background-image: url("../../../../public/img/benefit-shine-img.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
   padding: 4rem 3rem 4rem 4.4rem;
+  //@media screen and (max-width: 568px) {
+  //  right: 0;
+  //}
 }
 .benefit-item-top-shine-txt{
   font-size: 1.2rem;
