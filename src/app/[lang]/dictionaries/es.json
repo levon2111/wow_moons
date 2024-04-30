@@ -50,5 +50,18 @@
   "footer_rights": "© <span id=\"year\"></span> WowMoon Todos los<br/>\n                            derechos reservados",
   "services_title": "Nuestra experiencia, tu éxito",
   "services_description": "En WowMoons, estamos dedicados a ofrecer excelencia a través de un amplio espectro de servicios diseñados para empoderar tu negocio. Cada servicio está diseñado para enfrentar los desafíos y oportunidades únicos que enfrenta tu empresa.",
-  "services_all": "Todos los servicios"
+  "services_all": "Todos los servicios",
+  "scheduler_title": "Pasos diseñados para guiarte hacia la consecución de tu objetivo",
+  "scheduler_step_1": "Paso 1",
+  "scheduler_step_1_type": "Elige el tipo de reunión",
+  "scheduler_step_1_description": "Selecciona en línea para mayor comodidad o presencial para discusiones detalladas.",
+  "scheduler_step_2": "Paso 2",
+  "scheduler_step_2_type": "Programa una fecha y hora",
+  "scheduler_step_2_description": "Elige un horario que te convenga de nuestros espacios disponibles.",
+  "scheduler_step_3": "Paso 3",
+  "scheduler_step_3_type": "Prepárate para tu reunión",
+  "scheduler_step_3_description": "Prepara cualquier documento y lista los puntos clave de la discusión.",
+  "scheduler_step_4": "Paso 4",
+  "scheduler_step_4_type": "Revisa y confirma",
+  "scheduler_step_4_description": "Verifica los detalles y confirma tu reunión."
 }

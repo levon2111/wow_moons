@@ -50,5 +50,18 @@
   "footer_rights": "© <span id=\"year\"></span >WowMoon Alle<br/>\\n                            Rechte vorbehalten",
   "services_title": "Unsere Expertise, Ihr Erfolg",
   "services_description": "Bei WowMoons sind wir darauf ausgerichtet, Exzellenz in einem breiten Spektrum von Dienstleistungen zu bieten, die darauf abgestimmt sind, Ihr Unternehmen zu stärken. Jedes Angebot ist darauf ausgerichtet, den einzigartigen Herausforderungen und Möglichkeiten, denen Ihr Unternehmen gegenübersteht, gerecht zu werden.",
-  "services_all": "Alle Dienstleistungen"
+  "services_all": "Alle Dienstleistungen",
+  "scheduler_title": "Schritte, die Sie zur Erreichung Ihres Ziels führen",
+  "scheduler_step_1": "Schritt 1",
+  "scheduler_step_1_type": "Wählen Sie den Besprechungstyp",
+  "scheduler_step_1_description": "Wählen Sie Online für Bequemlichkeit oder Offline für detaillierte Gespräche.",
+  "scheduler_step_2": "Schritt 2",
+  "scheduler_step_2_type": "Planen Sie ein Datum und eine Uhrzeit",
+  "scheduler_step_2_description": "Wählen Sie einen Zeitpunkt, der für Sie aus unseren verfügbaren Slots am besten passt.",
+  "scheduler_step_3": "Schritt 3",
+  "scheduler_step_3_type": "Bereiten Sie sich auf Ihr Treffen vor",
+  "scheduler_step_3_description": "Bereiten Sie alle Dokumente vor und listen Sie wichtige Diskussionspunkte auf.",
+  "scheduler_step_4": "Schritt 4",
+  "scheduler_step_4_type": "Überprüfen und Bestätigen",
+  "scheduler_step_4_description": "Überprüfen Sie die Details und bestätigen Sie Ihr Treffen."
 }
