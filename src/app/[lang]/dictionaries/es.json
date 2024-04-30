@@ -47,5 +47,8 @@
   "footer_faq": "FAQ",
   "footer_privacy": "Política de Privacidad",
   "footer_terms": "Términos y Condiciones",
-  "footer_rights": "© <span id=\"year\"></span> WowMoon Todos los<br/>\n                            derechos reservados"
+  "footer_rights": "© <span id=\"year\"></span> WowMoon Todos los<br/>\n                            derechos reservados",
+  "services_title": "Nuestra experiencia, tu éxito",
+  "services_description": "En WowMoons, estamos dedicados a ofrecer excelencia a través de un amplio espectro de servicios diseñados para empoderar tu negocio. Cada servicio está diseñado para enfrentar los desafíos y oportunidades únicos que enfrenta tu empresa.",
+  "services_all": "Todos los servicios"
 }

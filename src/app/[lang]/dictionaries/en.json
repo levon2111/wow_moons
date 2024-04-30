@@ -47,5 +47,8 @@
   "footer_faq": "FAQ",
   "footer_privacy": "Privacy Policy",
   "footer_terms": "Terms and Conditions",
-  "footer_rights": "© <span id=\"year\"></span >WowMoon All<br/>\n                            rights reserved"
+  "footer_rights": "© <span id=\"year\"></span >WowMoon All<br/>\n                            rights reserved",
+  "services_title": "Our Expertise, Your Success",
+  "services_description": "At WowMoons, we are dedicated to delivering excellence across a broad spectrum of\n                                services tailored to empower your business. Each offering is designed to meet the unique\n                                challenges and opportunities your business faces.",
+  "services_all": "All Services"
 }
