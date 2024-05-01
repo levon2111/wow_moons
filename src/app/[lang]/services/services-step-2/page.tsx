@@ -31,14 +31,16 @@ export default function ServicesStepTwo() {
                                     <div className="choose-time-container">
                                         <div className="choose-time-top-row">
                                             <p className="small-txt">January 2024</p>
-                                            <button type="button" className="choose-time-top-btn">
-                                                <i className="icon-back"/>
-                                                {dictionary.meeting_wizard_step_2_previous_month}
-                                            </button>
-                                            <button type="button" className="choose-time-top-btn">
-                                                {dictionary.meeting_wizard_step_2_next_month}
-                                                <i className="icon-next"/>
-                                            </button>
+                                            <div className="choose-time-buttons-container">
+                                                <button type="button" className="choose-time-top-btn">
+                                                    <i className="icon-back"/>
+                                                    {dictionary.meeting_wizard_step_2_previous_month}
+                                                </button>
+                                                <button type="button" className="choose-time-top-btn">
+                                                    {dictionary.meeting_wizard_step_2_next_month}
+                                                    <i className="icon-next"/>
+                                                </button>
+                                            </div>
                                         </div>
                                         <div className="choose-time-datepicker-wrapper">
                                             <div className="choose-time-datepicker-mounts">

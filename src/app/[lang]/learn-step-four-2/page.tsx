@@ -45,25 +45,27 @@ export default function LearnStepFourOne() {
                   <div className="steps-main-content">
                     <div className="steps-left-column">
                       <p className="steps-left-column-title">Steps will push you to reach your goal</p>
-                      <div className="steps-column-item">
-                        <h6>Step 1</h6>
-                        <p className="small-txt">Meeting Type</p>
-                        <h6>Lorem ipsum dolor sit amet consectetur.</h6>
-                      </div>
-                      <div className="steps-column-item">
-                        <h6>Step 2</h6>
-                        <p className="small-txt">Meeting Type</p>
-                        <h6>Lorem ipsum dolor sit amet consectetur.</h6>
-                      </div>
-                      <div className="steps-column-item">
-                        <h6>Step 3</h6>
-                        <p className="small-txt">Meeting Type</p>
-                        <h6>Lorem ipsum dolor sit amet consectetur.</h6>
-                      </div>
-                      <div className="steps-column-item">
-                        <h6>Step 4</h6>
-                        <p className="small-txt">Meeting Type</p>
-                        <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+                      <div className="steps-column-items-container">
+                        <div className="steps-column-item">
+                          <h6>Step 1</h6>
+                          <p className="small-txt">Meeting Type</p>
+                          <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+                        </div>
+                        <div className="steps-column-item">
+                          <h6>Step 2</h6>
+                          <p className="small-txt">Meeting Type</p>
+                          <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+                        </div>
+                        <div className="steps-column-item">
+                          <h6>Step 3</h6>
+                          <p className="small-txt">Meeting Type</p>
+                          <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+                        </div>
+                        <div className="steps-column-item">
+                          <h6>Step 4</h6>
+                          <p className="small-txt">Meeting Type</p>
+                          <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+                        </div>
                       </div>
                     </div>
                     <div className="steps-main-column">
@@ -73,14 +75,16 @@ export default function LearnStepFourOne() {
                         <div className="choose-time-container">
                           <div className="choose-time-top-row">
                             <p className="small-txt">January 2024</p>
-                            <button type="button" className="choose-time-top-btn">
-                              <i className="icon-back" />
-                              Previous Month
-                            </button>
-                            <button type="button" className="choose-time-top-btn">
-                              Next Month
-                              <i className="icon-next" />
-                            </button>
+                            <div className="choose-time-buttons-container">
+                              <button type="button" className="choose-time-top-btn">
+                                <i className="icon-back" />
+                                Previous Month
+                              </button>
+                              <button type="button" className="choose-time-top-btn">
+                                Next Month
+                                <i className="icon-next" />
+                              </button>
+                            </div>
                           </div>
                           <div className="choose-time-datepicker-wrapper">
                             <div className="choose-time-datepicker-mounts">

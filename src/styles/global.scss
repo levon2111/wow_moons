@@ -324,6 +324,7 @@ footer {
     transform: scale(0.98);
   }
   @media screen and (max-width: 568px) {
+    height: 3.6rem;
     top: 1.4rem;
     right: 1.4rem;
   }
@@ -334,6 +335,10 @@ footer {
   line-height: 1.8rem;
   font-weight: 600;
   color: #1C1C20;
+  @media screen and (max-width: 568px) {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
 }
 .service-card-info-container{
   display: flex;
@@ -346,7 +351,7 @@ footer {
   opacity: 0;
   transition: transform 200ms, opacity 180ms;
   @media screen and (max-width: 568px) {
-    padding: 4.4rem 1.6rem 1.6rem;
+    padding: 4.4rem 1rem 0.2rem;
   }
 }
 .card-info-txt{
@@ -378,6 +383,13 @@ footer {
   >i{
     font-size: 1.6rem;
     color: #363BD5;
+  }
+  @media screen and (max-width: 568px) {
+    width: 3.6rem;
+    height: 3.6rem;
+    >i{
+      font-size: 1.4rem;
+    }
   }
 }
 //service card end
@@ -430,6 +442,10 @@ footer {
       }
       &:not(:last-child){
         border-inline-start: 0.2rem dashed #4A4A4A;
+        @media screen and (max-width: 1024px) {
+          border-inline-start: none;
+          border-bottom: 0.2rem dashed #4A4A4A;
+        }
       }
       h6{
         color: #B2B2B2;
@@ -580,6 +596,10 @@ footer {
       }
       &:not(:last-child){
         border-inline-start: 0.2rem dashed #B6B9C2;
+        @media screen and (max-width: 1024px) {
+          border-inline-start: none;
+          border-bottom: 0.2rem dashed #B6B9C2;
+        }
       }
       h6{
         color: #2F40D5;
@@ -753,21 +773,53 @@ footer {
   grid-template-columns: auto 1fr;
   gap: 2.4rem;
   padding: 2.4rem 2.4rem 0;
+  @media screen and (max-width: 1024px) {
+    gap: 1.8rem;
+    grid-template-columns: 1fr;
+    padding: 1.6rem 1.6rem 0;
+  }
+}
+.steps-column-items-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 1024px) {
+    flex-direction: row;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0 1rem 2rem;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 .steps-left-column{
   width: 29.2rem;
+  min-width: 0;
   min-height: 60rem;
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 2rem 1rem;
   gap: 1.8rem;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    min-height: 0;
+  }
 }
 .steps-left-column-title{
   font-size: 2rem;
   line-height: 2.4rem;
   font-weight: 600;
   margin-bottom: 1.8rem;
+  padding-inline: 1rem;
+  @media screen and (max-width: 1024px) {
+    padding-inline: 1rem 0;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
 }
 .steps-column-item{
+  flex: 0 0 auto;
   width: 100%;
   padding-inline-start: 1.4rem;
   position: relative;
@@ -792,11 +844,25 @@ footer {
     font-weight: 700;
     margin-bottom: 0.4rem;
   }
+  @media screen and (max-width: 1024px) {
+    width: 13rem;
+    &:first-child{
+      padding-inline-start: 0;
+    }
+    &:not(:first-child){
+      padding-inline-start: 2.2rem;
+    }
+    &:before{
+      top: auto;
+      bottom: -0.6rem;
+    }
+  }
 }
 
 
 .steps-main-column{
   width: 100%;
+  min-width: 0;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -814,6 +880,9 @@ footer {
   }
   .learn-link-bottom-buttons-row{
     justify-content: flex-end;
+  }
+  @media screen and (max-width: 568px) {
+    gap: 1.4rem;
   }
 }
 .steps-main-items-wrapper{
@@ -834,6 +903,10 @@ footer {
   padding: 3.2rem;
   border-radius: 1.2rem;
   position: relative;
+  @media screen and (max-width: 1024px) {
+    padding: 2.2rem;
+    gap: 1.6rem;
+  }
 }
 .step-item-img-container{
   width: 100%;
@@ -937,11 +1010,16 @@ footer {
   width: 100%;
   display: flex;
   gap: 0.8rem 1.6rem;
+  @media screen and (max-width: 568px) {
+    gap: 1.6rem;
+    flex-direction: column;
+  }
 }
 .steps-input-title-container{
   flex: 1;
   min-width: 0;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   gap: 0.8rem;
 }
@@ -998,11 +1076,20 @@ footer {
 .choose-time-top-row{
   flex: 0 0 auto;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 1.6rem;
   .small-txt {
     font-weight: 600;
   }
+  @media screen and (max-width: 568px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.choose-time-buttons-container{
+  display: flex;
+  gap: 1.6rem;
 }
 .choose-time-top-btn{
   display: flex;
@@ -1032,6 +1119,17 @@ footer {
   &:first-of-type{
     margin-inline-start: auto;
   }
+  @media screen and (max-width: 1024px) {
+    padding: 0 1.4rem;
+    font-size: 1.2rem;
+    height: 3.6rem;
+    gap: 0.2rem;
+    >i{
+      width: 1.6rem;
+      height: 1.6rem;
+      font-size: 1.2rem;
+    }
+  }
 }
 .choose-time-datepicker-wrapper{
   width: 100%;
@@ -1056,10 +1154,13 @@ footer {
   h6{
     flex: 1;
     min-width: 0;
-    font-size: 1.6rem;
-    line-height: 1.8rem;
+    //font-size: 1.6rem;
+    //line-height: 1.8rem;
     font-weight: 500;
     text-align: center;
+  }
+  @media screen and (max-width: 568px) {
+    padding: 0 1.2rem;
   }
 }
 .choose-time-datepicker-days-container{
@@ -1069,6 +1170,9 @@ footer {
   grid-gap: 0.8rem;
   padding: 1.4rem 2.4rem 2.4rem;
   border-radius: 0 0 1.2rem 1.2rem;
+  @media screen and (max-width: 568px) {
+    padding: 1.2rem;
+  }
 }
 .chose-days-item{
   display: flex;
@@ -1106,6 +1210,13 @@ footer {
     font-weight: 400;
     transition: background-color 140ms;
     position: relative;
+  }
+  @media screen and (max-width: 568px) {
+    >h6{
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+    }
   }
 }
 .not-availible-info{

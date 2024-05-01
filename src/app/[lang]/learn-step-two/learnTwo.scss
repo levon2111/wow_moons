@@ -1,16 +1,16 @@
-.window-main-content{
-  overflow-x: hidden;
-  overflow-y: auto;
-  max-height: 33.8rem;
-  grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
-  &::-webkit-scrollbar-track {
-    border-radius: 1rem;
-  }
-  /* Handle */
-  &::-webkit-scrollbar-thumb {
-    border-radius: 1rem;
-  }
-}
+//.window-main-content{
+//  overflow-x: hidden;
+//  overflow-y: auto;
+//  max-height: 33.8rem;
+//  grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+//  &::-webkit-scrollbar-track {
+//    border-radius: 1rem;
+//  }
+//  /* Handle */
+//  &::-webkit-scrollbar-thumb {
+//    border-radius: 1rem;
+//  }
+//}
 .window-main-content-item{
   min-height: 20.4rem;
 }

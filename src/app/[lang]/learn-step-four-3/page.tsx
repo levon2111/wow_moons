@@ -45,25 +45,27 @@ export default function LearnStepFourTwo() {
                   <div className="steps-main-content">
                     <div className="steps-left-column">
                       <p className="steps-left-column-title">Steps will push you to reach your goal</p>
-                      <div className="steps-column-item">
-                        <h6>Step 1</h6>
-                        <p className="small-txt">Meeting Type</p>
-                        <h6>Lorem ipsum dolor sit amet consectetur.</h6>
-                      </div>
-                      <div className="steps-column-item">
-                        <h6>Step 2</h6>
-                        <p className="small-txt">Meeting Type</p>
-                        <h6>Lorem ipsum dolor sit amet consectetur.</h6>
-                      </div>
-                      <div className="steps-column-item">
-                        <h6>Step 3</h6>
-                        <p className="small-txt">Meeting Type</p>
-                        <h6>Lorem ipsum dolor sit amet consectetur.</h6>
-                      </div>
-                      <div className="steps-column-item">
-                        <h6>Step 4</h6>
-                        <p className="small-txt">Meeting Type</p>
-                        <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+                      <div className="steps-column-items-container">
+                        <div className="steps-column-item">
+                          <h6>Step 1</h6>
+                          <p className="small-txt">Meeting Type</p>
+                          <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+                        </div>
+                        <div className="steps-column-item">
+                          <h6>Step 2</h6>
+                          <p className="small-txt">Meeting Type</p>
+                          <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+                        </div>
+                        <div className="steps-column-item">
+                          <h6>Step 3</h6>
+                          <p className="small-txt">Meeting Type</p>
+                          <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+                        </div>
+                        <div className="steps-column-item">
+                          <h6>Step 4</h6>
+                          <p className="small-txt">Meeting Type</p>
+                          <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+                        </div>
                       </div>
                     </div>
                     <div className="steps-main-column">

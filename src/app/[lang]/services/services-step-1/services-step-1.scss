@@ -1,0 +1,12 @@
+.steps-main-wrapper{
+  &.light{
+    .steps-column-item{
+      &:nth-child(1 of .steps-column-item){
+        &:before{
+          background: linear-gradient(125deg, #2b43d5 0%, #5626d5 100%) padding-box,
+                      linear-gradient(125deg, #2b43d5 0%, #5626d5 100%) border-box;
+        }
+      }
+    }
+  }
+}
