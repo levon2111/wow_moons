@@ -34,7 +34,6 @@ export default function Footer() {
                         <div className="footer-column">
                             <Link className="footer-link" href={"/faq"}>{dictionary.footer_faq}</Link>
                             <Link className="footer-link" href={"/privacy-policy"}>{dictionary.footer_privacy}</Link>
-                            <Link className="footer-link" href={"/terms-and-conditions"}>{dictionary.footer_terms}</Link>
                         </div>
                     </div>
                     <div className="footer-column rights">
