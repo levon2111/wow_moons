@@ -64,7 +64,6 @@
   "scheduler_step_4": "Step 4",
   "scheduler_step_4_type": "Review and Confirm",
   "scheduler_step_4_description": "Verify the details and confirm your meeting.",
-
   "meeting_scheduler_step_1_title": "Meeting Scheduler",
   "meeting_scheduler_step_1_subtitle": "Choose Your Meeting Type",
   "meeting_scheduler_step_1_description": "Select the type of meeting that best suits your needs to ensure a seamless\n                                    collaboration with our design team. We offer flexible options to connect, discuss,\n                                    and execute your projects effectively.",
@@ -92,6 +91,14 @@
   "meeting_wizard_step_4_question_1": "Where",
   "meeting_wizard_step_4_question_1_description": "Enjoy the convenience of online meetings. No hourly rates, only project-based pricing.",
   "meeting_wizard_step_4_question_2": "When",
-  "meeting_wizard_step_4_confirm": "Confirm"
-
+  "meeting_wizard_step_4_confirm": "Confirm",
+  "about_description": "At WowMoons, we breathe life into ideas. Founded in 2014, our design studio specializes in creating visual narratives that are not only aesthetically pleasing but also deeply resonant with your brand's core values. Our team of seasoned designers, strategists, and technologists approach every project with a blend of creativity and precision, ensuring that each design is not just seen but felt.",
+  "about_overall": "Overall",
+  "about_who": "Who We Are",
+  "about_who_description": "We are a dynamic team of designers and innovators committed to transforming ideas into\n                                visual realities. Our studio blends creativity with expertise to deliver compelling\n                                design solutions that resonate. Passionate about design and driven by results, we pride\n                                ourselves on creating impactful and sustainable designs that not only look great but\n                                also perform. Join us in redefining creative boundaries and elevating your brand's\n                                visual identity.",
+  "about_values": "Such Company Values!",
+  "about_mission": "Our Mission",
+  "about_mission_description": "At WowMoons, our mission is to empower brands with innovative design solutions that captivate and engage. We strive to push creative boundaries and deliver visually stunning results that not only meet but exceed expectations. Our focus is on building lasting relationships with our clients through a commitment to excellence, sustainability, and an unwavering passion for design. Join us in shaping the future of visual communication.",
+  "about_click": "Click to",
+  "about_touch": "Get in touch"
 }
