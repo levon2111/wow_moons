@@ -157,8 +157,7 @@ header {
   }
   &:hover{
     .languages-dropdown-container{
-      grid-template-rows: 1fr;
-      overflow: unset;
+      transform: scaleY(1);
     }
   }
 }
@@ -167,9 +166,10 @@ header {
   top: 4.4rem;
   left: -1.8rem;
   display: grid;
-  grid-template-rows: 0;
-  overflow: hidden;
-  transition: grid-template-rows 200ms;
+  //grid-template-rows: 0fr;
+  transform-origin: top left;
+  transform: scaleY(0);
+  transition: transform 140ms;
   &:after{
     content: "";
     position: absolute;
@@ -189,6 +189,10 @@ header {
   border-radius: 1.2rem;
   width: 21rem;
   min-height: 10.4rem;
+  //transform-origin: top left;
+  //transform: scaleY(0);
+  //transition: transform 160ms;
+  //overflow: hidden;
   box-shadow: 0.1rem 0.1rem 0.8rem 0 rgba(43, 67, 213, 0.2);
   background-color: #ffffff;
 }
@@ -213,6 +217,26 @@ header {
   &.en{
     .languages-img{
       background-image: url("../../../../public/img/eng-flag.png");
+    }
+  }
+  &.es{
+    .languages-img{
+      background-image: url("../../../../public/img/spain.png");
+    }
+  }
+  &.de{
+    .languages-img{
+      background-image: url("../../../../public/img/germany.png");
+    }
+  }
+  &.it{
+    .languages-img{
+      background-image: url("../../../../public/img/italy.png");
+    }
+  }
+  &.fr{
+    .languages-img{
+      background-image: url("../../../../public/img/france.png");
     }
   }
   &:not(.active){

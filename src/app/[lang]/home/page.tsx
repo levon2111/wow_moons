@@ -55,7 +55,7 @@ export default function Home() {
                                                placeholder={dictionary.home_page_search_placeholder}/>
                                     </div>
                                     {/*ToDo add active class for open search bottom dropdown*/}
-                                    <div className="search-items-wrapper">
+                                    <div className="search-items-wrapper active">
                                         <div className="search-items-container">
                                             <div className="search-items-content">
                                                 <div className="search-items-row">
