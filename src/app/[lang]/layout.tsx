@@ -30,13 +30,15 @@ export default async function RootLayout({
     const dictionary = await getDictionary(params.lang || "en")
 
     return (
-        <html lang={params.lang}>
-        <body className={inter.className}>
-        <DictionaryProvider dictionary={dictionary}>
-            {children}
-        </DictionaryProvider>
-        </body>
-        </html>
+      <>
+          <html lang={params.lang}>
+          <body className={inter.className}>
+          <DictionaryProvider dictionary={dictionary}>
+              {children}
+          </DictionaryProvider>
+          </body>
+          </html>
+      </>
     );
 }
 
